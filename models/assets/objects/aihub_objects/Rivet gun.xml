@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Rivet gun">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Rivet gun_BaseColor" file="Rivet gun/Rivet gun_BaseColor.png"/>
+    <material name="material_0" texture="Rivet gun_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Rivet gun/Rivet gun.obj" name="Rivet gun"/>
+    <mesh file="Rivet gun/Rivet gun_collision_0.obj" name="Rivet gun_collision_0"/>
+    <mesh file="Rivet gun/Rivet gun_collision_1.obj" name="Rivet gun_collision_1"/>
+    <mesh file="Rivet gun/Rivet gun_collision_2.obj" name="Rivet gun_collision_2"/>
+    <mesh file="Rivet gun/Rivet gun_collision_3.obj" name="Rivet gun_collision_3"/>
+    <mesh file="Rivet gun/Rivet gun_collision_4.obj" name="Rivet gun_collision_4"/>
+    <mesh file="Rivet gun/Rivet gun_collision_5.obj" name="Rivet gun_collision_5"/>
+    <mesh file="Rivet gun/Rivet gun_collision_6.obj" name="Rivet gun_collision_6"/>
+    <mesh file="Rivet gun/Rivet gun_collision_7.obj" name="Rivet gun_collision_7"/>
+    <mesh file="Rivet gun/Rivet gun_collision_8.obj" name="Rivet gun_collision_8"/>
+    <mesh file="Rivet gun/Rivet gun_collision_9.obj" name="Rivet gun_collision_9"/>
+    <mesh file="Rivet gun/Rivet gun_collision_10.obj" name="Rivet gun_collision_10"/>
+    <mesh file="Rivet gun/Rivet gun_collision_11.obj" name="Rivet gun_collision_11"/>
+    <mesh file="Rivet gun/Rivet gun_collision_12.obj" name="Rivet gun_collision_12"/>
+    <mesh file="Rivet gun/Rivet gun_collision_13.obj" name="Rivet gun_collision_13"/>
+    <mesh file="Rivet gun/Rivet gun_collision_14.obj" name="Rivet gun_collision_14"/>
+    <mesh file="Rivet gun/Rivet gun_collision_15.obj" name="Rivet gun_collision_15"/>
+    <mesh file="Rivet gun/Rivet gun_collision_16.obj" name="Rivet gun_collision_16"/>
+    <mesh file="Rivet gun/Rivet gun_collision_17.obj" name="Rivet gun_collision_17"/>
+    <mesh file="Rivet gun/Rivet gun_collision_18.obj" name="Rivet gun_collision_18"/>
+    <mesh file="Rivet gun/Rivet gun_collision_19.obj" name="Rivet gun_collision_19"/>
+    <mesh file="Rivet gun/Rivet gun_collision_20.obj" name="Rivet gun_collision_20"/>
+    <mesh file="Rivet gun/Rivet gun_collision_21.obj" name="Rivet gun_collision_21"/>
+    <mesh file="Rivet gun/Rivet gun_collision_22.obj" name="Rivet gun_collision_22"/>
+    <mesh file="Rivet gun/Rivet gun_collision_23.obj" name="Rivet gun_collision_23"/>
+    <mesh file="Rivet gun/Rivet gun_collision_24.obj" name="Rivet gun_collision_24"/>
+    <mesh file="Rivet gun/Rivet gun_collision_25.obj" name="Rivet gun_collision_25"/>
+    <mesh file="Rivet gun/Rivet gun_collision_26.obj" name="Rivet gun_collision_26"/>
+    <mesh file="Rivet gun/Rivet gun_collision_27.obj" name="Rivet gun_collision_27"/>
+    <mesh file="Rivet gun/Rivet gun_collision_28.obj" name="Rivet gun_collision_28"/>
+    <mesh file="Rivet gun/Rivet gun_collision_29.obj" name="Rivet gun_collision_29"/>
+    <mesh file="Rivet gun/Rivet gun_collision_30.obj" name="Rivet gun_collision_30"/>
+    <mesh file="Rivet gun/Rivet gun_collision_31.obj" name="Rivet gun_collision_31"/>
+    <mesh file="Rivet gun/Rivet gun_collision_32.obj" name="Rivet gun_collision_32"/>
+    <mesh file="Rivet gun/Rivet gun_collision_33.obj" name="Rivet gun_collision_33"/>
+  </asset>
+  <worldbody>
+    <body name="Rivet gun">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Rivet gun" class="visual"/>
+      <geom mesh="Rivet gun_collision_0" rgba="0.9570668676548434 0.08894144275565785 0.08305443685576819 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_1" rgba="0.3452291905299366 0.9595664606166896 0.2579879153029292 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_2" rgba="0.8876556184722637 0.8945539100988117 0.8489617380901473 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_3" rgba="0.8730912986914118 0.07875156221673729 0.6752798103760255 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_4" rgba="0.6486742639734505 0.6830656388675306 0.41156969567622326 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_5" rgba="0.689755381992512 0.4695423664502306 0.19364980541584131 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_6" rgba="0.5794332438171884 0.17642474682433207 0.45957198146700307 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_7" rgba="0.923244451260303 0.2523131179731025 0.896785001638771 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_8" rgba="0.15996418482400432 0.621480366742 0.6833290651258042 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_9" rgba="0.6264093012450366 0.5819894669533513 0.4812336667814645 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_10" rgba="0.1080854760615858 0.7495437009878003 0.7675938804204282 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_11" rgba="0.24069039765827938 0.8337485943529214 0.789596498177222 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_12" rgba="0.15195080523585214 0.9933066314185528 0.1970366802524509 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_13" rgba="0.1855145115590694 0.1504218507340287 0.7529747024066044 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_14" rgba="0.21045376683255912 0.5866228857797681 0.8675270191632026 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_15" rgba="0.42698563908843234 0.8504067465157575 0.5729055748380826 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_16" rgba="0.5357551033107628 0.20443661987293138 0.49586844795621876 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_17" rgba="0.557214496491992 0.461424575606067 0.8572010765401272 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_18" rgba="0.04071842594749353 0.157431789793261 0.21363615493036758 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_19" rgba="0.0364203488133612 0.3691482944088661 0.6177924568156491 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_20" rgba="0.6038257154564566 0.8362110130273206 0.6581570632841 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_21" rgba="0.514785725549389 0.9207703622237758 0.35715705828379063 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_22" rgba="0.36594155424709696 0.7218525512117994 0.3522294406627401 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_23" rgba="0.6072387239542119 0.8857064776841749 0.7637437118785741 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_24" rgba="0.5473207553606642 0.3309915369893197 0.44840399065151704 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_25" rgba="0.6010225470037063 0.4312788547440414 0.5162889794993611 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_26" rgba="0.13656853881317155 0.3403646793449603 0.9068769454485154 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_27" rgba="0.18086677628627768 0.1903150961643194 0.2061032918913771 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_28" rgba="0.16704523005617256 0.7171693597202811 0.10058884133631085 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_29" rgba="0.6966616288072869 0.36221615013330666 0.9495973918292108 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_30" rgba="0.519667361032151 0.3430982031958215 0.4794928819745611 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_31" rgba="0.5654786049686584 0.086400635886554 0.585200219207414 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_32" rgba="0.6206158528019626 0.6778362260794797 0.9793810462903041 1" class="collision"/>
+      <geom mesh="Rivet gun_collision_33" rgba="0.8700209564614569 0.9249422751491196 0.7307912516847098 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

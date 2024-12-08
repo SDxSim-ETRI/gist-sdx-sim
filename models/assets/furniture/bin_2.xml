@@ -1,0 +1,25 @@
+<mujoco model="bin_new">
+    <asset>
+        <mesh name="bin" file="bin/meshes/bin.stl" scale="0.01 0.01 0.01" />
+        <mesh name="busbin" file="bin/meshes/busbin.stl" />
+        <texture name="T_Metal_bin" type="cube" height="1" width="1" file="common/textures/metal0.png" />
+        <material name="M_Metal_bin" texture="T_Metal_bin" texrepeat="3 3" reflectance="0.7" texuniform="false" />
+    </asset>
+
+    <default>
+        <default class="viz_stl_Metal_bin">
+            <geom group="1" type="mesh" material="M_Metal_bin" />
+        </default>
+   </default>
+
+    <worldbody>
+        <body name="bin_body" pos="0 -0.2 0">
+            <geom class="viz_stl_Metal_bin" type="mesh" mesh="bin" euler="-1.57 0 3.14" group="1" contype="0" conaffinity="0" />
+            <geom type="box" pos="-.12 0 .2" size=".01 .147 .2" euler="0 -0.0872665 0" group="3" />
+            <geom type="box" pos=".12 0 .2" size=".01 .147 .2" euler="0 0.0872665 0" group="3" />
+            <geom type="box" pos="0 -.12 .2" size=".01 .147 .2" euler="0.0872665 0 1.57" group="3" />
+            <geom type="box" pos="0 .12 .2" size=".01 .147 .2" euler="-0.0872665 0 1.57" group="3" />
+            <geom type="box" pos="0 0 .05" size=".1 .1 .005" group="4" />
+        </body>
+    </worldbody>
+</mujoco>

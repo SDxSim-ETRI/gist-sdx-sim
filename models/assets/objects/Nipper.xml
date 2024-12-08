@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Nipper">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Nipper" file="Nipper/Nipper.png"/>
+    <material name="material_0" texture="Nipper" specular="1.0" shininess="0.5"/>
+    <mesh file="Nipper/Nipper.obj" name="Nipper"/>
+    <mesh file="Nipper/Nipper_collision_0.obj" name="Nipper_collision_0"/>
+    <mesh file="Nipper/Nipper_collision_1.obj" name="Nipper_collision_1"/>
+    <mesh file="Nipper/Nipper_collision_2.obj" name="Nipper_collision_2"/>
+    <mesh file="Nipper/Nipper_collision_3.obj" name="Nipper_collision_3"/>
+    <mesh file="Nipper/Nipper_collision_4.obj" name="Nipper_collision_4"/>
+    <mesh file="Nipper/Nipper_collision_5.obj" name="Nipper_collision_5"/>
+    <mesh file="Nipper/Nipper_collision_6.obj" name="Nipper_collision_6"/>
+    <mesh file="Nipper/Nipper_collision_7.obj" name="Nipper_collision_7"/>
+    <mesh file="Nipper/Nipper_collision_8.obj" name="Nipper_collision_8"/>
+    <mesh file="Nipper/Nipper_collision_9.obj" name="Nipper_collision_9"/>
+  </asset>
+  <worldbody>
+    <body name="Nipper">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Nipper" class="visual"/>
+      <geom mesh="Nipper_collision_0" rgba="0.8333107541799624 0.425342865185681 0.7332127800011026 1" class="collision"/>
+      <geom mesh="Nipper_collision_1" rgba="0.4893790581982541 0.8514266593048833 0.5790560319556192 1" class="collision"/>
+      <geom mesh="Nipper_collision_2" rgba="0.17312983231652235 0.27410143308046275 0.979108928597142 1" class="collision"/>
+      <geom mesh="Nipper_collision_3" rgba="0.5727437739621386 0.8245730605429504 0.5800397350258618 1" class="collision"/>
+      <geom mesh="Nipper_collision_4" rgba="0.7233583301764606 0.784211347632375 0.2564472425247669 1" class="collision"/>
+      <geom mesh="Nipper_collision_5" rgba="0.4624630523215423 0.09240678312135309 0.4437916010593329 1" class="collision"/>
+      <geom mesh="Nipper_collision_6" rgba="0.4835673435238682 0.8532608368064286 0.6559475022027171 1" class="collision"/>
+      <geom mesh="Nipper_collision_7" rgba="0.3124116502019829 0.2072433192747375 0.748002590308224 1" class="collision"/>
+      <geom mesh="Nipper_collision_8" rgba="0.9786152901605714 0.45542305932895377 0.7741198665449811 1" class="collision"/>
+      <geom mesh="Nipper_collision_9" rgba="0.3299890798521318 0.9003574282161805 0.295193662594067 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

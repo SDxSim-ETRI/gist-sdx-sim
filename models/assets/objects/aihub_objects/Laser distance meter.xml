@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Laser distance meter">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Laser distance meter" file="Laser distance meter/Laser distance meter.png"/>
+    <material name="material_0" texture="Laser distance meter" specular="1.0" shininess="1.0"/>
+    <mesh file="Laser distance meter/Laser distance meter.obj" name="Laser distance meter"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_0.obj" name="Laser distance meter_collision_0"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_1.obj" name="Laser distance meter_collision_1"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_2.obj" name="Laser distance meter_collision_2"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_3.obj" name="Laser distance meter_collision_3"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_4.obj" name="Laser distance meter_collision_4"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_5.obj" name="Laser distance meter_collision_5"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_6.obj" name="Laser distance meter_collision_6"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_7.obj" name="Laser distance meter_collision_7"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_8.obj" name="Laser distance meter_collision_8"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_9.obj" name="Laser distance meter_collision_9"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_10.obj" name="Laser distance meter_collision_10"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_11.obj" name="Laser distance meter_collision_11"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_12.obj" name="Laser distance meter_collision_12"/>
+    <mesh file="Laser distance meter/Laser distance meter_collision_13.obj" name="Laser distance meter_collision_13"/>
+  </asset>
+  <worldbody>
+    <body name="Laser distance meter">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Laser distance meter" class="visual"/>
+      <geom mesh="Laser distance meter_collision_0" rgba="0.6455239301154734 0.7090607029554739 0.8747844878757176 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_1" rgba="0.824058690341081 0.9273370599233944 0.36166534818916807 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_2" rgba="0.14187296318058074 0.6029176854003395 0.19181800806521976 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_3" rgba="0.3387034936102389 0.6033517514769045 0.8396527573847304 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_4" rgba="0.9223424807650247 0.47589696235947365 0.9815599313929008 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_5" rgba="0.8264710286486159 0.9952999103685358 0.8133537740581671 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_6" rgba="0.38248763553171006 0.3582069907741394 0.5319385669320775 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_7" rgba="0.9178678125965325 0.9581025898129977 0.6764412122911951 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_8" rgba="0.32524625237420735 0.589788141447429 0.4633888041249118 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_9" rgba="0.7811919884370948 0.6199146069315736 0.1281143834236902 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_10" rgba="0.03622566182557818 0.783926504731951 0.35840789280563323 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_11" rgba="0.06224161125614758 0.24631083021806544 0.6245891116105815 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_12" rgba="0.9922628430793494 0.11650580918584252 0.9229033531349018 1" class="collision"/>
+      <geom mesh="Laser distance meter_collision_13" rgba="0.0015969442992019856 0.5059503725558518 0.2971075364638919 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

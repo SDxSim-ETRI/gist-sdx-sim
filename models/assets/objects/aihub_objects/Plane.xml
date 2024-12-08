@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Plane">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Plane" file="Plane/Plane.png"/>
+    <material name="material_0" texture="Plane" specular="1.0" shininess="0.5"/>
+    <mesh file="Plane/Plane.obj" name="Plane"/>
+    <mesh file="Plane/Plane_collision_0.obj" name="Plane_collision_0"/>
+    <mesh file="Plane/Plane_collision_1.obj" name="Plane_collision_1"/>
+    <mesh file="Plane/Plane_collision_2.obj" name="Plane_collision_2"/>
+    <mesh file="Plane/Plane_collision_3.obj" name="Plane_collision_3"/>
+    <mesh file="Plane/Plane_collision_4.obj" name="Plane_collision_4"/>
+    <mesh file="Plane/Plane_collision_5.obj" name="Plane_collision_5"/>
+    <mesh file="Plane/Plane_collision_6.obj" name="Plane_collision_6"/>
+    <mesh file="Plane/Plane_collision_7.obj" name="Plane_collision_7"/>
+    <mesh file="Plane/Plane_collision_8.obj" name="Plane_collision_8"/>
+    <mesh file="Plane/Plane_collision_9.obj" name="Plane_collision_9"/>
+    <mesh file="Plane/Plane_collision_10.obj" name="Plane_collision_10"/>
+    <mesh file="Plane/Plane_collision_11.obj" name="Plane_collision_11"/>
+    <mesh file="Plane/Plane_collision_12.obj" name="Plane_collision_12"/>
+    <mesh file="Plane/Plane_collision_13.obj" name="Plane_collision_13"/>
+  </asset>
+  <worldbody>
+    <body name="Plane">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Plane" class="visual"/>
+      <geom mesh="Plane_collision_0" rgba="0.10283736957679224 0.11258187558965604 0.15182409570052768 1" class="collision"/>
+      <geom mesh="Plane_collision_1" rgba="0.6543145365073338 0.030423632234338527 0.05480187684780513 1" class="collision"/>
+      <geom mesh="Plane_collision_2" rgba="0.8081633906302865 0.7315122815215609 0.09267936981566549 1" class="collision"/>
+      <geom mesh="Plane_collision_3" rgba="0.7328922191471539 0.5573832283175844 0.30754909802124264 1" class="collision"/>
+      <geom mesh="Plane_collision_4" rgba="0.25370106729003317 0.0256027369566435 0.24039447921549129 1" class="collision"/>
+      <geom mesh="Plane_collision_5" rgba="0.955471058918245 0.0672317325813846 0.05720658608871165 1" class="collision"/>
+      <geom mesh="Plane_collision_6" rgba="0.7717071561976077 0.09381394811429633 0.6412118641682796 1" class="collision"/>
+      <geom mesh="Plane_collision_7" rgba="0.03864799687815923 0.4832545981624019 0.012267214461282094 1" class="collision"/>
+      <geom mesh="Plane_collision_8" rgba="0.8011154527429906 0.8799512266409264 0.8894908221116868 1" class="collision"/>
+      <geom mesh="Plane_collision_9" rgba="0.956887298029157 0.9276203765524323 0.8150360029571407 1" class="collision"/>
+      <geom mesh="Plane_collision_10" rgba="0.12059281846652081 0.5717236416336948 0.5452028928869125 1" class="collision"/>
+      <geom mesh="Plane_collision_11" rgba="0.4454767146897207 0.28289530373244864 0.8148028216616592 1" class="collision"/>
+      <geom mesh="Plane_collision_12" rgba="0.6651914611344897 0.5351426541249509 0.20750636668936018 1" class="collision"/>
+      <geom mesh="Plane_collision_13" rgba="0.8230197776328274 0.377520295057295 0.582618440371274 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

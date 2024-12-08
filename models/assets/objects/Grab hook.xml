@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Grab hook">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Grab hook" file="Grab hook/Grab hook.png"/>
+    <material name="material_0" texture="Grab hook" specular="1.0" shininess="1.0"/>
+    <mesh file="Grab hook/Grab hook.obj" name="Grab hook"/>
+    <mesh file="Grab hook/Grab hook_collision_0.obj" name="Grab hook_collision_0"/>
+    <mesh file="Grab hook/Grab hook_collision_1.obj" name="Grab hook_collision_1"/>
+    <mesh file="Grab hook/Grab hook_collision_2.obj" name="Grab hook_collision_2"/>
+    <mesh file="Grab hook/Grab hook_collision_3.obj" name="Grab hook_collision_3"/>
+    <mesh file="Grab hook/Grab hook_collision_4.obj" name="Grab hook_collision_4"/>
+    <mesh file="Grab hook/Grab hook_collision_5.obj" name="Grab hook_collision_5"/>
+    <mesh file="Grab hook/Grab hook_collision_6.obj" name="Grab hook_collision_6"/>
+    <mesh file="Grab hook/Grab hook_collision_7.obj" name="Grab hook_collision_7"/>
+    <mesh file="Grab hook/Grab hook_collision_8.obj" name="Grab hook_collision_8"/>
+    <mesh file="Grab hook/Grab hook_collision_9.obj" name="Grab hook_collision_9"/>
+    <mesh file="Grab hook/Grab hook_collision_10.obj" name="Grab hook_collision_10"/>
+    <mesh file="Grab hook/Grab hook_collision_11.obj" name="Grab hook_collision_11"/>
+    <mesh file="Grab hook/Grab hook_collision_12.obj" name="Grab hook_collision_12"/>
+    <mesh file="Grab hook/Grab hook_collision_13.obj" name="Grab hook_collision_13"/>
+  </asset>
+  <worldbody>
+    <body name="Grab hook">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Grab hook" class="visual"/>
+      <geom mesh="Grab hook_collision_0" rgba="0.8021553281073277 0.9751767447083248 0.5217828916571744 1" class="collision"/>
+      <geom mesh="Grab hook_collision_1" rgba="0.055365806537096995 0.8458856470193545 0.21686775341798015 1" class="collision"/>
+      <geom mesh="Grab hook_collision_2" rgba="0.9101703519005463 0.19643051100451348 0.5634683703038524 1" class="collision"/>
+      <geom mesh="Grab hook_collision_3" rgba="0.31835605752559026 0.24063785068789478 0.7823614083601651 1" class="collision"/>
+      <geom mesh="Grab hook_collision_4" rgba="0.6514283711632194 0.5879865350510153 0.23747054032206305 1" class="collision"/>
+      <geom mesh="Grab hook_collision_5" rgba="0.16545342847515632 0.9321187898299428 0.6759904134236944 1" class="collision"/>
+      <geom mesh="Grab hook_collision_6" rgba="0.4312152275142547 0.7743398877300828 0.3110648451162864 1" class="collision"/>
+      <geom mesh="Grab hook_collision_7" rgba="0.9629434941094571 0.5438983156515808 0.3126702248516088 1" class="collision"/>
+      <geom mesh="Grab hook_collision_8" rgba="0.5980928289483731 0.14350037825780115 0.987520179988753 1" class="collision"/>
+      <geom mesh="Grab hook_collision_9" rgba="0.382565677954411 0.9996829963580339 0.7626797490045033 1" class="collision"/>
+      <geom mesh="Grab hook_collision_10" rgba="0.8077015074752081 0.27937370467670297 0.8036986158344875 1" class="collision"/>
+      <geom mesh="Grab hook_collision_11" rgba="0.7933315440918861 0.3970909412330238 0.8343148377705192 1" class="collision"/>
+      <geom mesh="Grab hook_collision_12" rgba="0.23126239670781656 0.8159544653065105 0.40756346994549364 1" class="collision"/>
+      <geom mesh="Grab hook_collision_13" rgba="0.9046599114174583 0.023789830752931174 0.3591508605285194 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

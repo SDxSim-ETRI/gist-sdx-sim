@@ -1,0 +1,46 @@
+<mujoco model="Shovel">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Shovel" file="Shovel.png"/>
+    <material name="material_0" texture="Shovel" specular="1.0" shininess="1.0"/>
+    <mesh file="Shovel.obj"/>
+    <mesh file="Shovel_collision_0.obj"/>
+    <mesh file="Shovel_collision_1.obj"/>
+    <mesh file="Shovel_collision_2.obj"/>
+    <mesh file="Shovel_collision_3.obj"/>
+    <mesh file="Shovel_collision_4.obj"/>
+    <mesh file="Shovel_collision_5.obj"/>
+    <mesh file="Shovel_collision_6.obj"/>
+    <mesh file="Shovel_collision_7.obj"/>
+    <mesh file="Shovel_collision_8.obj"/>
+    <mesh file="Shovel_collision_9.obj"/>
+    <mesh file="Shovel_collision_10.obj"/>
+    <mesh file="Shovel_collision_11.obj"/>
+    <mesh file="Shovel_collision_12.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Shovel">
+      <geom material="material_0" mesh="Shovel" class="visual"/>
+      <geom mesh="Shovel_collision_0" rgba="0.9938474406989698 0.5419900413990051 0.3187389073351332 1" class="collision"/>
+      <geom mesh="Shovel_collision_1" rgba="0.14301653288125138 0.5169977127380676 0.8475487071826221 1" class="collision"/>
+      <geom mesh="Shovel_collision_2" rgba="0.5833764950377603 0.9807406012876452 0.3164506218886163 1" class="collision"/>
+      <geom mesh="Shovel_collision_3" rgba="0.03566634029531435 0.14775359016859135 0.22107555158223835 1" class="collision"/>
+      <geom mesh="Shovel_collision_4" rgba="0.2798979004553733 0.2134127840515242 0.8977497177511664 1" class="collision"/>
+      <geom mesh="Shovel_collision_5" rgba="0.94047083395646 0.3447077411694778 0.8241897308346817 1" class="collision"/>
+      <geom mesh="Shovel_collision_6" rgba="0.2324067115045939 0.6207490145358648 0.292296273629688 1" class="collision"/>
+      <geom mesh="Shovel_collision_7" rgba="0.7083496811450775 0.6716542334010026 0.582531137021924 1" class="collision"/>
+      <geom mesh="Shovel_collision_8" rgba="0.3815531994635113 0.17731806543320539 0.3533074222952025 1" class="collision"/>
+      <geom mesh="Shovel_collision_9" rgba="0.5216520496602723 0.5684636808864617 0.25839085245701443 1" class="collision"/>
+      <geom mesh="Shovel_collision_10" rgba="0.1287642953942214 0.02070311124917812 0.8240852281375587 1" class="collision"/>
+      <geom mesh="Shovel_collision_11" rgba="0.3131354506244379 0.6094131624577706 0.8463636796996885 1" class="collision"/>
+      <geom mesh="Shovel_collision_12" rgba="0.715346051903924 0.018274195392064208 0.9134580669895854 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

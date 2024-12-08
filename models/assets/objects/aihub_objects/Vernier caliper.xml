@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Vernier caliper">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Vernier caliper" file="Vernier caliper/Vernier caliper.png"/>
+    <material name="material_0" texture="Vernier caliper" specular="1.0" shininess="1.0"/>
+    <mesh file="Vernier caliper/Vernier caliper.obj" name="Vernier caliper"/>
+    <mesh file="Vernier caliper/Vernier caliper_collision_0.obj" name="Vernier caliper_collision_0"/>
+    <mesh file="Vernier caliper/Vernier caliper_collision_1.obj" name="Vernier caliper_collision_1"/>
+    <mesh file="Vernier caliper/Vernier caliper_collision_2.obj" name="Vernier caliper_collision_2"/>
+    <mesh file="Vernier caliper/Vernier caliper_collision_3.obj" name="Vernier caliper_collision_3"/>
+  </asset>
+  <worldbody>
+    <body name="Vernier caliper">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Vernier caliper" class="visual"/>
+      <geom mesh="Vernier caliper_collision_0" rgba="0.5633401665561962 0.7027440125530624 0.46247623241538927 1" class="collision"/>
+      <geom mesh="Vernier caliper_collision_1" rgba="0.34247357950455126 0.3232374243724282 0.04275304962868276 1" class="collision"/>
+      <geom mesh="Vernier caliper_collision_2" rgba="0.18734357182219108 0.30053348666913593 0.2208591242220025 1" class="collision"/>
+      <geom mesh="Vernier caliper_collision_3" rgba="0.7561619685465023 0.508648908883514 0.8823675731984544 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

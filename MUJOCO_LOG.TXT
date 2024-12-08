@@ -1,0 +1,42 @@
+Sun Nov 10 19:16:16 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 48. The simulation is unstable. Time = 0.9320.
+
+Sun Nov 10 19:17:27 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 48. The simulation is unstable. Time = 0.9320.
+
+Tue Nov 19 18:45:11 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 51. The simulation is unstable. Time = 0.3340.
+
+Tue Nov 26 13:32:01 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 0. The simulation is unstable. Time = 0.0300.
+
+Tue Nov 26 20:35:24 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 20. The simulation is unstable. Time = 0.0100.
+
+Tue Nov 26 20:35:56 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 20. The simulation is unstable. Time = 0.0100.
+
+Tue Nov 26 20:38:23 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 20. The simulation is unstable. Time = 0.0100.
+
+Tue Nov 26 20:38:52 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 20. The simulation is unstable. Time = 0.0100.
+
+Tue Nov 26 20:38:56 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 20. The simulation is unstable. Time = 0.0100.
+
+Tue Nov 26 20:39:32 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 20. The simulation is unstable. Time = 0.0100.
+
+Tue Nov 26 20:40:18 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 8. The simulation is unstable. Time = 0.0080.
+
+Fri Dec  6 10:02:29 2024
+WARNING: Nan, Inf or huge value in QACC at DOF 12. The simulation is unstable. Time = 0.3300.
+
+Sat Dec  7 16:23:57 2024
+WARNING: File size over 2GB is not supported. File: '/home/geonhyup/Desktop/Research/open-sim-mujoco/mujoco_menagerie/franka_emika_panda'
+
+Sat Dec  7 16:24:23 2024
+WARNING: File size over 2GB is not supported. File: '/home/geonhyup/Desktop/Research/open-sim-mujoco/mujoco_menagerie/aloha'
+

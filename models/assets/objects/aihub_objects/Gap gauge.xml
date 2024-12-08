@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Gap gauge">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Gap gauge_BaseColor" file="Gap gauge/Gap gauge_BaseColor.png"/>
+    <material name="material_0" texture="Gap gauge_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Gap gauge/Gap gauge.obj" name="Gap gauge"/>
+    <mesh file="Gap gauge/Gap gauge_collision_0.obj" name="Gap gauge_collision_0"/>
+    <mesh file="Gap gauge/Gap gauge_collision_1.obj" name="Gap gauge_collision_1"/>
+    <mesh file="Gap gauge/Gap gauge_collision_2.obj" name="Gap gauge_collision_2"/>
+    <mesh file="Gap gauge/Gap gauge_collision_3.obj" name="Gap gauge_collision_3"/>
+    <mesh file="Gap gauge/Gap gauge_collision_4.obj" name="Gap gauge_collision_4"/>
+  </asset>
+  <worldbody>
+    <body name="Gap gauge">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Gap gauge" class="visual"/>
+      <geom mesh="Gap gauge_collision_0" rgba="0.33163750349239873 0.024653765145817963 0.4098672398810739 1" class="collision"/>
+      <geom mesh="Gap gauge_collision_1" rgba="0.4016886174845067 0.43036732531948385 0.7047481176979143 1" class="collision"/>
+      <geom mesh="Gap gauge_collision_2" rgba="0.8227430021122899 0.9539977976262182 0.291446714406419 1" class="collision"/>
+      <geom mesh="Gap gauge_collision_3" rgba="0.6097870464423379 0.9640899088772967 0.9296874296893414 1" class="collision"/>
+      <geom mesh="Gap gauge_collision_4" rgba="0.407785840783605 0.8521970353557442 0.7638335747596032 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

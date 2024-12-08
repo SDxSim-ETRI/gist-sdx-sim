@@ -1,0 +1,40 @@
+<mujoco model="Monkey wrench">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Monkey wrench" file="Monkey wrench.png"/>
+    <material name="material_0" texture="Monkey wrench" specular="1.0" shininess="0.5"/>
+    <mesh file="Monkey wrench.obj"/>
+    <mesh file="Monkey wrench_collision_0.obj"/>
+    <mesh file="Monkey wrench_collision_1.obj"/>
+    <mesh file="Monkey wrench_collision_2.obj"/>
+    <mesh file="Monkey wrench_collision_3.obj"/>
+    <mesh file="Monkey wrench_collision_4.obj"/>
+    <mesh file="Monkey wrench_collision_5.obj"/>
+    <mesh file="Monkey wrench_collision_6.obj"/>
+    <mesh file="Monkey wrench_collision_7.obj"/>
+    <mesh file="Monkey wrench_collision_8.obj"/>
+    <mesh file="Monkey wrench_collision_9.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Monkey wrench">
+      <geom material="material_0" mesh="Monkey wrench" class="visual"/>
+      <geom mesh="Monkey wrench_collision_0" rgba="0.15540959223095463 0.252881618131074 0.12960742692494587 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_1" rgba="0.3922398884171471 0.3611140044287313 0.8173428257280557 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_2" rgba="0.4351325181679415 0.36924129725557253 0.20328511215135137 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_3" rgba="0.527380645893998 0.260205925997236 0.9529274873127539 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_4" rgba="0.9263734498266798 0.7240320074272653 0.25885363650170967 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_5" rgba="0.08190099704344811 0.04782943610889823 0.21452771207553922 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_6" rgba="0.9034856659101392 0.900325751481451 0.7270009380206501 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_7" rgba="0.5179450461983074 0.07063421651654067 0.5800585489530545 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_8" rgba="0.2744738781723822 0.7289853466270164 0.7936299769726444 1" class="collision"/>
+      <geom mesh="Monkey wrench_collision_9" rgba="0.8616359653844285 0.15535355637605108 0.5411040782748534 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Scraper">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Scraper" file="Scraper/Scraper.png"/>
+    <material name="material_0" texture="Scraper" specular="1.0" shininess="0.5"/>
+    <mesh file="Scraper/Scraper.obj" name="Scraper"/>
+    <mesh file="Scraper/Scraper_collision_0.obj" name="Scraper_collision_0"/>
+    <mesh file="Scraper/Scraper_collision_1.obj" name="Scraper_collision_1"/>
+    <mesh file="Scraper/Scraper_collision_2.obj" name="Scraper_collision_2"/>
+    <mesh file="Scraper/Scraper_collision_3.obj" name="Scraper_collision_3"/>
+    <mesh file="Scraper/Scraper_collision_4.obj" name="Scraper_collision_4"/>
+  </asset>
+  <worldbody>
+    <body name="Scraper">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Scraper" class="visual"/>
+      <geom mesh="Scraper_collision_0" rgba="0.41366175680175965 0.181781630506749 0.10304312890576894 1" class="collision"/>
+      <geom mesh="Scraper_collision_1" rgba="0.24567927343798968 0.7690602782469109 0.5907758932303862 1" class="collision"/>
+      <geom mesh="Scraper_collision_2" rgba="0.611468134001912 0.7386822679156763 0.8380683311725841 1" class="collision"/>
+      <geom mesh="Scraper_collision_3" rgba="0.4409594539445093 0.008996473714027453 0.07264566123003635 1" class="collision"/>
+      <geom mesh="Scraper_collision_4" rgba="0.1195576365643386 0.69876354243002 0.7640166669537896 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

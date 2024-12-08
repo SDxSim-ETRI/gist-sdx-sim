@@ -1,0 +1,76 @@
+<mujoco model="microwave">
+    <compiler inertiafromgeom="auto" inertiagrouprange="1 4" angle="radian"/>
+
+    <asset>
+        <mesh file="microwave/meshes/micro.stl" name="micro"/>
+        <mesh file="microwave/meshes/microdoor.stl" name="microdoor"/>
+        <mesh file="microwave/meshes/microbutton.stl" name="microbutton"/>
+        <mesh file="microwave/meshes/microfeet.stl" name="microfeet"/>
+        <mesh file="microwave/meshes/microhandle.stl" name="microhandle"/>
+        <mesh file="microwave/meshes/microwindow.stl" name="microwindow"/>
+
+        <texture name="T_micro_metal" type="cube" height="1" width="1" file="common/textures/metal0.png"/>
+
+        <material name="micro_metal" rgba="1 1 1 1" texture="T_micro_metal" texrepeat="3 3" reflectance="1" shininess="1" texuniform="false"/>
+        <material name="micro_black" rgba=".2 .2 .2 1" reflectance="1" shininess="1"/>
+        <material name="micro_white" rgba=".8 .8 .82 1" reflectance="1" shininess="1"/>
+        <material name="micro_window" rgba=".4 .4 .4 .25" reflectance="1" shininess="1"/>
+        <material name="micro_collision_blue" rgba="0.3 0.3 1.0 0.5" shininess="0" specular="0"/>
+    </asset>
+
+    <default>
+        <default class="microwave">
+            <joint damping="2" frictionloss="2" armature=".01" limited="true"/>
+            <geom conaffinity="0" contype="0" group="1" material="micro_black" type="mesh"/>
+            <default class="micro_collision">
+                <geom conaffinity="1" condim="3" contype="0" group="4" margin="0.001" material="micro_collision_blue" solimp=".8 .9 .01" solref=".02 1"/>
+            </default>
+        </default>
+    </default>
+
+    <sensor>
+        <jointpos name="micro0joint" joint="micro0joint"/>
+    </sensor>
+
+    <visual>
+        <headlight diffuse=".9 .9 .9"/>
+    </visual>
+
+    <worldbody>
+        <body name="microroot3" childclass="microwave">
+            <geom type="box" size=".3 .02 .20" pos="0 .22 .20" material="micro_white"/> <!--back -->
+            <geom type="box" size=".3 .2 .02" pos="0 0 .02" material="micro_white"/> <!--bottom -->
+            <geom type="box" size=".3 .2 .02" pos="0 0 .38" material="micro_white"/> <!--top -->
+            <geom type="box" size=".05 .2 .199" pos="0.25 0 .20" material="micro_white"/>  <!--right-->
+            <geom type="box" size=".02 .2 .199" pos="-.28 0 .20" material="micro_white"/> <!--left -->
+
+            <geom class="micro_collision" type="box" size=".3 .02 .16" pos="0 .22 .16"/> <!--back -->
+            <geom class="micro_collision" type="box" size=".3 .2 .02" pos="0 0 .02"/> <!--bottom -->
+            <geom class="micro_collision" type="box" size=".3 .2 .02" pos="0 0 .30"/> <!--top -->
+            <geom class="micro_collision" type="box" size=".05 .2 .159" pos="0.25 0 .16"/>  <!--right-->
+            <geom class="micro_collision" type="box" size=".02 .2 .159" pos="-.28 0 .16"/> <!--left -->
+
+            <geom type="box" size=".05 .02 .20" pos="0.25 -.225 .20" material="micro_white"/>
+            <geom type="box" size=".03 .005 .03" pos="0.25 -.25 .08" material="micro_metal"/>
+            <geom class="micro_collision" type="box" size=".05 .02 .16" pos="0.25 -.225 .16"/>
+            <geom class="micro_collision" type="cylinder" size=".03 .01" pos="0.25 -.25 .08" euler="1.57 0 0"/>
+
+            <body name="microdoorroot3">
+                <joint axis="0 0 1" pos="-.3 -.2 .20" limited="true" name="micro0joint" range="-2.094 0"/>
+                <geom type="box" size=".245 .02 .20" pos="-.05 -.225 .20" material="micro_white"/>
+                <geom type="box" size=".2 .02 .12" pos="-.05 -.24 .20" material="micro_black" rgba=".1 0 0 .2"/>
+                <geom material="micro_metal" pos="0.15 -0.3 0.20" size="0.02 0.17" type="capsule"/>
+                <geom material="micro_metal" euler="1.57 0 0" pos="0.15 -0.27 .37" size="0.02 0.03" type="capsule"/>
+                <geom material="micro_metal" euler="1.57 0 0" pos="0.15 -0.27 .03" size="0.02 0.03" type="capsule"/>
+
+                <geom class="micro_collision" pos="0.15 -0.3 0.20" size="0.02 0.13" type="capsule" mass="0.020"/>
+                <geom class="micro_collision" euler="1.57 0 0" pos="0.15 -0.27 .29" size="0.02 0.03" type="capsule" mass="0.020"/>
+                <geom class="micro_collision" euler="1.57 0 0" pos="0.15 -0.27 .03" size="0.02 0.03" type="capsule" mass="0.020"/>
+                <geom class="micro_collision" type="box" size=".24 .02 .20" pos="-.05 -.225 .20" mass="0.20"/>
+                <site type="sphere" name="microhandle_site3" pos="0.15 -0.3 0.20" size=".01" group="3" rgba="1 1 0 1"/>
+            </body>
+        </body>
+
+    </worldbody>
+
+</mujoco>

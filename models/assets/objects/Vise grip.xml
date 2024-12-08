@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Vise grip">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Vise grip_BaseColor" file="Vise grip/Vise grip_BaseColor.png"/>
+    <material name="material_0" texture="Vise grip_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Vise grip/Vise grip.obj" name="Vise grip"/>
+    <mesh file="Vise grip/Vise grip_collision_0.obj" name="Vise grip_collision_0"/>
+    <mesh file="Vise grip/Vise grip_collision_1.obj" name="Vise grip_collision_1"/>
+    <mesh file="Vise grip/Vise grip_collision_2.obj" name="Vise grip_collision_2"/>
+    <mesh file="Vise grip/Vise grip_collision_3.obj" name="Vise grip_collision_3"/>
+    <mesh file="Vise grip/Vise grip_collision_4.obj" name="Vise grip_collision_4"/>
+    <mesh file="Vise grip/Vise grip_collision_5.obj" name="Vise grip_collision_5"/>
+    <mesh file="Vise grip/Vise grip_collision_6.obj" name="Vise grip_collision_6"/>
+    <mesh file="Vise grip/Vise grip_collision_7.obj" name="Vise grip_collision_7"/>
+    <mesh file="Vise grip/Vise grip_collision_8.obj" name="Vise grip_collision_8"/>
+    <mesh file="Vise grip/Vise grip_collision_9.obj" name="Vise grip_collision_9"/>
+    <mesh file="Vise grip/Vise grip_collision_10.obj" name="Vise grip_collision_10"/>
+    <mesh file="Vise grip/Vise grip_collision_11.obj" name="Vise grip_collision_11"/>
+    <mesh file="Vise grip/Vise grip_collision_12.obj" name="Vise grip_collision_12"/>
+    <mesh file="Vise grip/Vise grip_collision_13.obj" name="Vise grip_collision_13"/>
+    <mesh file="Vise grip/Vise grip_collision_14.obj" name="Vise grip_collision_14"/>
+    <mesh file="Vise grip/Vise grip_collision_15.obj" name="Vise grip_collision_15"/>
+    <mesh file="Vise grip/Vise grip_collision_16.obj" name="Vise grip_collision_16"/>
+    <mesh file="Vise grip/Vise grip_collision_17.obj" name="Vise grip_collision_17"/>
+    <mesh file="Vise grip/Vise grip_collision_18.obj" name="Vise grip_collision_18"/>
+    <mesh file="Vise grip/Vise grip_collision_19.obj" name="Vise grip_collision_19"/>
+    <mesh file="Vise grip/Vise grip_collision_20.obj" name="Vise grip_collision_20"/>
+    <mesh file="Vise grip/Vise grip_collision_21.obj" name="Vise grip_collision_21"/>
+    <mesh file="Vise grip/Vise grip_collision_22.obj" name="Vise grip_collision_22"/>
+    <mesh file="Vise grip/Vise grip_collision_23.obj" name="Vise grip_collision_23"/>
+    <mesh file="Vise grip/Vise grip_collision_24.obj" name="Vise grip_collision_24"/>
+    <mesh file="Vise grip/Vise grip_collision_25.obj" name="Vise grip_collision_25"/>
+    <mesh file="Vise grip/Vise grip_collision_26.obj" name="Vise grip_collision_26"/>
+    <mesh file="Vise grip/Vise grip_collision_27.obj" name="Vise grip_collision_27"/>
+    <mesh file="Vise grip/Vise grip_collision_28.obj" name="Vise grip_collision_28"/>
+    <mesh file="Vise grip/Vise grip_collision_29.obj" name="Vise grip_collision_29"/>
+  </asset>
+  <worldbody>
+    <body name="Vise grip">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Vise grip" class="visual"/>
+      <geom mesh="Vise grip_collision_0" rgba="0.13760607120492196 0.24686866412256858 0.7287958321777651 1" class="collision"/>
+      <geom mesh="Vise grip_collision_1" rgba="0.23932707620875882 0.060366369326647185 0.10957352711013224 1" class="collision"/>
+      <geom mesh="Vise grip_collision_2" rgba="0.7926897161225568 0.8800764257086202 0.3016843862595303 1" class="collision"/>
+      <geom mesh="Vise grip_collision_3" rgba="0.9469902401103462 0.353166354289579 0.48682810328506454 1" class="collision"/>
+      <geom mesh="Vise grip_collision_4" rgba="0.8136055226638186 0.45786557257410276 0.7365993396896012 1" class="collision"/>
+      <geom mesh="Vise grip_collision_5" rgba="0.32157967709269175 0.7042243558414536 0.08362805881735536 1" class="collision"/>
+      <geom mesh="Vise grip_collision_6" rgba="0.697534244217547 0.9496316443677526 0.06753842594946902 1" class="collision"/>
+      <geom mesh="Vise grip_collision_7" rgba="0.7733593475138457 0.8481593013464009 0.9935839567921074 1" class="collision"/>
+      <geom mesh="Vise grip_collision_8" rgba="0.9148155420094831 0.534985253955341 0.7866963582568597 1" class="collision"/>
+      <geom mesh="Vise grip_collision_9" rgba="0.5186988742548133 0.26016387326107604 0.04594666539722747 1" class="collision"/>
+      <geom mesh="Vise grip_collision_10" rgba="0.5128837120851895 0.7483762419098147 0.551097621763995 1" class="collision"/>
+      <geom mesh="Vise grip_collision_11" rgba="0.9653363272918566 0.0971172115483303 0.4316838752961073 1" class="collision"/>
+      <geom mesh="Vise grip_collision_12" rgba="0.9758744895294963 0.993890500596038 0.4065315348273504 1" class="collision"/>
+      <geom mesh="Vise grip_collision_13" rgba="0.8425515525097153 0.9123856398799365 0.3043544488508748 1" class="collision"/>
+      <geom mesh="Vise grip_collision_14" rgba="0.8890668604559726 0.6713590833577966 0.4090887954283988 1" class="collision"/>
+      <geom mesh="Vise grip_collision_15" rgba="0.6556696403202499 0.4310358963674169 0.5082582240308828 1" class="collision"/>
+      <geom mesh="Vise grip_collision_16" rgba="0.9679046273005821 0.488800506775641 0.024559509172868643 1" class="collision"/>
+      <geom mesh="Vise grip_collision_17" rgba="0.6189133525685343 0.6305137849818082 0.15597060834003562 1" class="collision"/>
+      <geom mesh="Vise grip_collision_18" rgba="0.27602774310064015 0.4294836199097829 0.7216482560412603 1" class="collision"/>
+      <geom mesh="Vise grip_collision_19" rgba="0.1688139227950658 0.038717703232328815 0.5162136886699701 1" class="collision"/>
+      <geom mesh="Vise grip_collision_20" rgba="0.43844551200002657 0.5976036442182625 0.10672270392689054 1" class="collision"/>
+      <geom mesh="Vise grip_collision_21" rgba="0.8545063860722116 0.28482702971400886 0.9238434282539707 1" class="collision"/>
+      <geom mesh="Vise grip_collision_22" rgba="0.2616195005163976 0.47602468514032525 0.15113339187826946 1" class="collision"/>
+      <geom mesh="Vise grip_collision_23" rgba="0.6400669430595578 0.7641491895008354 0.31375693276462346 1" class="collision"/>
+      <geom mesh="Vise grip_collision_24" rgba="0.42211593404228254 0.54972633335631 0.5761045854089261 1" class="collision"/>
+      <geom mesh="Vise grip_collision_25" rgba="0.8667262933806483 0.8993294437259345 0.009425995487530536 1" class="collision"/>
+      <geom mesh="Vise grip_collision_26" rgba="0.2967162372297535 0.2063364150908592 0.30521191891582167 1" class="collision"/>
+      <geom mesh="Vise grip_collision_27" rgba="0.9447555260577438 0.5264633393103636 0.7231582527509617 1" class="collision"/>
+      <geom mesh="Vise grip_collision_28" rgba="0.3142967545166968 0.9370597768796103 0.6707192453691895 1" class="collision"/>
+      <geom mesh="Vise grip_collision_29" rgba="0.004766120635333881 0.534729028500196 0.4960989034013177 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

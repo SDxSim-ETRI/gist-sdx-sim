@@ -1,0 +1,44 @@
+<mujoco model="kettle">
+    <compiler inertiafromgeom="auto" inertiagrouprange="1 4" angle="radian" />
+
+    <asset>
+        <mesh file="kettle/meshes/kettle.stl" name="kettle" />
+        <mesh file="kettle/meshes/kettlehandle.stl" name="kettlehandle" />
+
+        <texture name="T_kettle_metal" type="cube" height="1" width="1" file="common/textures/metal0.png" />
+        <texture name="T_kettle_wood" type="cube" height="1" width="1" file="common/textures/wood1.png" />
+
+        <material name="kettle_wood" rgba="1 1 1 1" texture="T_kettle_wood" texrepeat="3 3" reflectance="1" shininess="1" texuniform="false" />
+        <material name="kettle_metal" rgba="1 1 1 1" texture="T_kettle_metal" texrepeat="3 3" reflectance="1" shininess="1" texuniform="false" />
+        <material name="kettle_Rmetal" rgba="1 .1 .1 1" texture="T_kettle_metal" texrepeat="3 3" reflectance="1" shininess="1" texuniform="false" />
+        <material name="kettle_Bmetal" rgba=".1 .1 1 1" texture="T_kettle_metal" texrepeat="3 3" reflectance="1" shininess="1" texuniform="false" />
+        <material name="kettle_white" rgba=".9 .9 .9 1" reflectance="1" shininess="1" />
+        <material name="kettle_collision_blue" rgba="0.3 0.3 1.0 0.5" shininess="0" specular="0" />
+    </asset>
+
+    <default>
+        <default class="kettle">
+            <joint damping="2" frictionloss="2" armature=".01" limited="true" />
+            <geom conaffinity="0" contype="0" group="1" material="kettle_white" type="mesh" />
+            <default class="kettle_collision">
+                <geom conaffinity="1" condim="4" contype="1" group="4" margin="0.001" material="kettle_collision_blue" solimp=".8 .9 .01" solref=".02 1" type="mesh" />
+            </default>
+        </default>
+    </default>
+
+    <worldbody>
+        <body name="kettleroot6" childclass="kettle" pos="0 0 0.006064596585929394">
+            <geom material="kettle_metal" mesh="kettle" />
+            <geom material="kettle_wood" euler="0 1.57 0" pos="0 0 0.13" size="0.015" type="sphere" />
+            <geom material="kettle_wood" euler="0 1.77 0" pos=".06 0 0.259" size="0.03 0.1" type="capsule" />
+            <geom material="kettle_metal" pos="-0.07 0 0.185" euler="0 .3 0" size="0.02 0.02 0.09" type="box" />
+
+            <geom class="kettle_collision" mesh="kettle" mass="0.02" />
+            <geom class="kettle_collision" euler="0 1.57 0" pos="0 0 0.13" size="0.015" type="sphere" mass="0.02" />
+            <geom class="kettle_collision" euler="0 1.77 0" pos=".06 0 0.259" size="0.03 0.1" type="capsule" mass="0.02" />
+            <geom class="kettle_collision" pos="-0.07 0 0.185" euler="0 .3 0" size="0.02 0.02 0.09" type="box" mass="0.02" />
+            <site type="sphere" name="kettle_site6" pos="0 0 0.259" size=".01" group="3" rgba="1 0 0 1" />
+        </body>
+    </worldbody>
+
+</mujoco>

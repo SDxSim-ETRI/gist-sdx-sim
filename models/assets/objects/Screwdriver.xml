@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Screwdriver">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Screwdriver_BaseColor" file="Screwdriver/Screwdriver_BaseColor.png"/>
+    <material name="Material_#25" texture="Screwdriver_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Screwdriver/Screwdriver.obj" name="Screwdriver"/>
+    <mesh file="Screwdriver/Screwdriver_collision_0.obj" name="Screwdriver_collision_0"/>
+    <mesh file="Screwdriver/Screwdriver_collision_1.obj" name="Screwdriver_collision_1"/>
+  </asset>
+  <worldbody>
+    <body name="Screwdriver">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="Material_#25" mesh="Screwdriver" class="visual"/>
+      <geom mesh="Screwdriver_collision_0" rgba="0.5600248908033458 0.33677172059207205 0.868345624273277 1" class="collision"/>
+      <geom mesh="Screwdriver_collision_1" rgba="0.13657578792952352 0.4797813068568825 0.625147751878495 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

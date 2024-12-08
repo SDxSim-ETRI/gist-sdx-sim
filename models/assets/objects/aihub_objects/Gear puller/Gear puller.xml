@@ -1,0 +1,78 @@
+<mujoco model="Gear puller">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Gear puller_BaseColor" file="Gear puller_BaseColor.png"/>
+    <material name="material_0" texture="Gear puller_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Gear puller.obj"/>
+    <mesh file="Gear puller_collision_0.obj"/>
+    <mesh file="Gear puller_collision_1.obj"/>
+    <mesh file="Gear puller_collision_2.obj"/>
+    <mesh file="Gear puller_collision_3.obj"/>
+    <mesh file="Gear puller_collision_4.obj"/>
+    <mesh file="Gear puller_collision_5.obj"/>
+    <mesh file="Gear puller_collision_6.obj"/>
+    <mesh file="Gear puller_collision_7.obj"/>
+    <mesh file="Gear puller_collision_8.obj"/>
+    <mesh file="Gear puller_collision_9.obj"/>
+    <mesh file="Gear puller_collision_10.obj"/>
+    <mesh file="Gear puller_collision_11.obj"/>
+    <mesh file="Gear puller_collision_12.obj"/>
+    <mesh file="Gear puller_collision_13.obj"/>
+    <mesh file="Gear puller_collision_14.obj"/>
+    <mesh file="Gear puller_collision_15.obj"/>
+    <mesh file="Gear puller_collision_16.obj"/>
+    <mesh file="Gear puller_collision_17.obj"/>
+    <mesh file="Gear puller_collision_18.obj"/>
+    <mesh file="Gear puller_collision_19.obj"/>
+    <mesh file="Gear puller_collision_20.obj"/>
+    <mesh file="Gear puller_collision_21.obj"/>
+    <mesh file="Gear puller_collision_22.obj"/>
+    <mesh file="Gear puller_collision_23.obj"/>
+    <mesh file="Gear puller_collision_24.obj"/>
+    <mesh file="Gear puller_collision_25.obj"/>
+    <mesh file="Gear puller_collision_26.obj"/>
+    <mesh file="Gear puller_collision_27.obj"/>
+    <mesh file="Gear puller_collision_28.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Gear puller">
+      <geom material="material_0" mesh="Gear puller" class="visual"/>
+      <geom mesh="Gear puller_collision_0" rgba="0.8499496942307686 0.8613889028667655 0.8963329328490044 1" class="collision"/>
+      <geom mesh="Gear puller_collision_1" rgba="0.9789464098706356 0.011922042244374209 0.6604088409150101 1" class="collision"/>
+      <geom mesh="Gear puller_collision_2" rgba="0.2236400328831173 0.6392555051442728 0.730309436947454 1" class="collision"/>
+      <geom mesh="Gear puller_collision_3" rgba="0.3783155719178448 0.05520572068633145 0.14134990619046583 1" class="collision"/>
+      <geom mesh="Gear puller_collision_4" rgba="0.27871959619756914 0.9507645804655722 0.7332381498543716 1" class="collision"/>
+      <geom mesh="Gear puller_collision_5" rgba="0.6641299998964806 0.9801071980251553 0.6059306350997765 1" class="collision"/>
+      <geom mesh="Gear puller_collision_6" rgba="0.5753063878999268 0.31065628101887044 0.261750953225082 1" class="collision"/>
+      <geom mesh="Gear puller_collision_7" rgba="0.5324333595464716 0.5151858551465436 0.9231542265762026 1" class="collision"/>
+      <geom mesh="Gear puller_collision_8" rgba="0.49020956489799805 0.24365876861277957 0.07380436837009752 1" class="collision"/>
+      <geom mesh="Gear puller_collision_9" rgba="0.5631169503079514 0.3961509792077329 0.47955706223979855 1" class="collision"/>
+      <geom mesh="Gear puller_collision_10" rgba="0.9800820129575911 0.3276644442616512 0.6003540080989972 1" class="collision"/>
+      <geom mesh="Gear puller_collision_11" rgba="0.3727718861780105 0.9726200255481816 0.8714452451658328 1" class="collision"/>
+      <geom mesh="Gear puller_collision_12" rgba="0.3629917104012308 0.9502829192537661 0.6733532691906168 1" class="collision"/>
+      <geom mesh="Gear puller_collision_13" rgba="0.17792649367247115 0.8069552701988951 0.25068999370680844 1" class="collision"/>
+      <geom mesh="Gear puller_collision_14" rgba="0.2115458532615908 0.9239124269854652 0.48529091370541744 1" class="collision"/>
+      <geom mesh="Gear puller_collision_15" rgba="0.48857758500536297 0.5777746878801745 0.6668443382262425 1" class="collision"/>
+      <geom mesh="Gear puller_collision_16" rgba="0.5382601344403476 0.0909438552115609 0.555478404264411 1" class="collision"/>
+      <geom mesh="Gear puller_collision_17" rgba="0.42473726202933015 0.759552983168442 0.30588297882394944 1" class="collision"/>
+      <geom mesh="Gear puller_collision_18" rgba="0.7187763899497529 0.6334072470412629 0.2715347106359559 1" class="collision"/>
+      <geom mesh="Gear puller_collision_19" rgba="0.39398017046976164 0.4445646153812288 0.4864658642488451 1" class="collision"/>
+      <geom mesh="Gear puller_collision_20" rgba="0.9320901733149786 0.2393451839118137 0.11177936735739147 1" class="collision"/>
+      <geom mesh="Gear puller_collision_21" rgba="0.23232047483844398 0.8825212391053279 0.8411916326930159 1" class="collision"/>
+      <geom mesh="Gear puller_collision_22" rgba="0.8784880145818491 0.9754915662240399 0.04559844737405705 1" class="collision"/>
+      <geom mesh="Gear puller_collision_23" rgba="0.5199844491211222 0.5738269598295 0.19037389528139714 1" class="collision"/>
+      <geom mesh="Gear puller_collision_24" rgba="0.28354983363074904 0.09895734296477476 0.18082689174623745 1" class="collision"/>
+      <geom mesh="Gear puller_collision_25" rgba="0.6400600549072059 0.46657690275218766 0.32702245862922263 1" class="collision"/>
+      <geom mesh="Gear puller_collision_26" rgba="0.994724667757879 0.33499054026827524 0.6863335539841762 1" class="collision"/>
+      <geom mesh="Gear puller_collision_27" rgba="0.38190212014371716 0.5151186591590167 0.7739563238654782 1" class="collision"/>
+      <geom mesh="Gear puller_collision_28" rgba="0.6511435616940779 0.016753672164680045 0.973359344315781 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Bolt cutter">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Bolt cutter" file="Bolt cutter/Bolt cutter.png"/>
+    <material name="material_0" texture="Bolt cutter" specular="1.0" shininess="1.0"/>
+    <mesh name="Bolt cutter" file="Bolt cutter/Bolt cutter.obj"/>
+    <mesh name="Bolt cutter_collision_0" file="Bolt cutter/Bolt cutter_collision_0.obj"/>
+    <mesh name="Bolt cutter_collision_1" file="Bolt cutter/Bolt cutter_collision_1.obj"/>
+    <mesh name="Bolt cutter_collision_2" file="Bolt cutter/Bolt cutter_collision_2.obj"/>
+    <mesh name="Bolt cutter_collision_3" file="Bolt cutter/Bolt cutter_collision_3.obj"/>
+    <mesh name="Bolt cutter_collision_4" file="Bolt cutter/Bolt cutter_collision_4.obj"/>
+    <mesh name="Bolt cutter_collision_5" file="Bolt cutter/Bolt cutter_collision_5.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Bolt cutter">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Bolt cutter" class="visual"/>
+      <geom mesh="Bolt cutter_collision_0" rgba="0.7403509337184435 0.6569300742421125 0.17256458826078858 1" class="collision"/>
+      <geom mesh="Bolt cutter_collision_1" rgba="0.7878158969406286 0.8140423058175922 0.35965169784468287 1" class="collision"/>
+      <geom mesh="Bolt cutter_collision_2" rgba="0.5747308663995305 0.266899229510666 0.5493523774009665 1" class="collision"/>
+      <geom mesh="Bolt cutter_collision_3" rgba="0.5498013737479077 0.9561227443984143 0.4632253280013835 1" class="collision"/>
+      <geom mesh="Bolt cutter_collision_4" rgba="0.5553375057555463 0.573914282511994 0.28875000860290434 1" class="collision"/>
+      <geom mesh="Bolt cutter_collision_5" rgba="0.9929954828365233 0.35825443440994276 0.21462660057567373 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

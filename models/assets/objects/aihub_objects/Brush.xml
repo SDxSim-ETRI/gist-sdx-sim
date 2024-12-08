@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Brush">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Brush_BaseColor" file="Brush/Brush_BaseColor.png"/>
+    <material name="material_0" texture="Brush_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Brush/Brush.obj" name="Brush"/>
+    <mesh file="Brush/Brush_collision_0.obj" name="Brush_collision_0"/>
+    <mesh file="Brush/Brush_collision_1.obj" name="Brush_collision_1"/>
+    <mesh file="Brush/Brush_collision_2.obj" name="Brush_collision_2"/>
+    <mesh file="Brush/Brush_collision_3.obj" name="Brush_collision_3"/>
+    <mesh file="Brush/Brush_collision_4.obj" name="Brush_collision_4"/>
+    <mesh file="Brush/Brush_collision_5.obj" name="Brush_collision_5"/>
+    <mesh file="Brush/Brush_collision_6.obj" name="Brush_collision_6"/>
+    <mesh file="Brush/Brush_collision_7.obj" name="Brush_collision_7"/>
+    <mesh file="Brush/Brush_collision_8.obj" name="Brush_collision_8"/>
+    <mesh file="Brush/Brush_collision_9.obj" name="Brush_collision_9"/>
+    <mesh file="Brush/Brush_collision_10.obj" name="Brush_collision_10"/>
+    <mesh file="Brush/Brush_collision_11.obj" name="Brush_collision_11"/>
+    <mesh file="Brush/Brush_collision_12.obj" name="Brush_collision_12"/>
+    <mesh file="Brush/Brush_collision_13.obj" name="Brush_collision_13"/>
+    <mesh file="Brush/Brush_collision_14.obj" name="Brush_collision_14"/>
+    <mesh file="Brush/Brush_collision_15.obj" name="Brush_collision_15"/>
+    <mesh file="Brush/Brush_collision_16.obj" name="Brush_collision_16"/>
+    <mesh file="Brush/Brush_collision_17.obj" name="Brush_collision_17"/>
+    <mesh file="Brush/Brush_collision_18.obj" name="Brush_collision_18"/>
+    <mesh file="Brush/Brush_collision_19.obj" name="Brush_collision_19"/>
+    <mesh file="Brush/Brush_collision_20.obj" name="Brush_collision_20"/>
+    <mesh file="Brush/Brush_collision_21.obj" name="Brush_collision_21"/>
+    <mesh file="Brush/Brush_collision_22.obj" name="Brush_collision_22"/>
+    <mesh file="Brush/Brush_collision_23.obj" name="Brush_collision_23"/>
+    <mesh file="Brush/Brush_collision_24.obj" name="Brush_collision_24"/>
+    <mesh file="Brush/Brush_collision_25.obj" name="Brush_collision_25"/>
+    <mesh file="Brush/Brush_collision_26.obj" name="Brush_collision_26"/>
+    <mesh file="Brush/Brush_collision_27.obj" name="Brush_collision_27"/>
+    <mesh file="Brush/Brush_collision_28.obj" name="Brush_collision_28"/>
+    <mesh file="Brush/Brush_collision_29.obj" name="Brush_collision_29"/>
+    <mesh file="Brush/Brush_collision_30.obj" name="Brush_collision_30"/>
+    <mesh file="Brush/Brush_collision_31.obj" name="Brush_collision_31"/>
+    <mesh file="Brush/Brush_collision_32.obj" name="Brush_collision_32"/>
+    <mesh file="Brush/Brush_collision_33.obj" name="Brush_collision_33"/>
+    <mesh file="Brush/Brush_collision_34.obj" name="Brush_collision_34"/>
+    <mesh file="Brush/Brush_collision_35.obj" name="Brush_collision_35"/>
+    <mesh file="Brush/Brush_collision_36.obj" name="Brush_collision_36"/>
+    <mesh file="Brush/Brush_collision_37.obj" name="Brush_collision_37"/>
+    <mesh file="Brush/Brush_collision_38.obj" name="Brush_collision_38"/>
+    <mesh file="Brush/Brush_collision_39.obj" name="Brush_collision_39"/>
+    <mesh file="Brush/Brush_collision_40.obj" name="Brush_collision_40"/>
+    <mesh file="Brush/Brush_collision_41.obj" name="Brush_collision_41"/>
+    <mesh file="Brush/Brush_collision_42.obj" name="Brush_collision_42"/>
+    <mesh file="Brush/Brush_collision_43.obj" name="Brush_collision_43"/>
+    <mesh file="Brush/Brush_collision_44.obj" name="Brush_collision_44"/>
+    <mesh file="Brush/Brush_collision_45.obj" name="Brush_collision_45"/>
+    <mesh file="Brush/Brush_collision_46.obj" name="Brush_collision_46"/>
+    <mesh file="Brush/Brush_collision_47.obj" name="Brush_collision_47"/>
+    <mesh file="Brush/Brush_collision_48.obj" name="Brush_collision_48"/>
+    <mesh file="Brush/Brush_collision_49.obj" name="Brush_collision_49"/>
+    <mesh file="Brush/Brush_collision_50.obj" name="Brush_collision_50"/>
+    <mesh file="Brush/Brush_collision_51.obj" name="Brush_collision_51"/>
+    <mesh file="Brush/Brush_collision_52.obj" name="Brush_collision_52"/>
+    <mesh file="Brush/Brush_collision_53.obj" name="Brush_collision_53"/>
+    <mesh file="Brush/Brush_collision_54.obj" name="Brush_collision_54"/>
+    <mesh file="Brush/Brush_collision_55.obj" name="Brush_collision_55"/>
+    <mesh file="Brush/Brush_collision_56.obj" name="Brush_collision_56"/>
+    <mesh file="Brush/Brush_collision_57.obj" name="Brush_collision_57"/>
+    <mesh file="Brush/Brush_collision_58.obj" name="Brush_collision_58"/>
+    <mesh file="Brush/Brush_collision_59.obj" name="Brush_collision_59"/>
+    <mesh file="Brush/Brush_collision_60.obj" name="Brush_collision_60"/>
+    <mesh file="Brush/Brush_collision_61.obj" name="Brush_collision_61"/>
+    <mesh file="Brush/Brush_collision_62.obj" name="Brush_collision_62"/>
+    <mesh file="Brush/Brush_collision_63.obj" name="Brush_collision_63"/>
+    <mesh file="Brush/Brush_collision_64.obj" name="Brush_collision_64"/>
+    <mesh file="Brush/Brush_collision_65.obj" name="Brush_collision_65"/>
+    <mesh file="Brush/Brush_collision_66.obj" name="Brush_collision_66"/>
+    <mesh file="Brush/Brush_collision_67.obj" name="Brush_collision_67"/>
+    <mesh file="Brush/Brush_collision_68.obj" name="Brush_collision_68"/>
+    <mesh file="Brush/Brush_collision_69.obj" name="Brush_collision_69"/>
+    <mesh file="Brush/Brush_collision_70.obj" name="Brush_collision_70"/>
+    <mesh file="Brush/Brush_collision_71.obj" name="Brush_collision_71"/>
+    <mesh file="Brush/Brush_collision_72.obj" name="Brush_collision_72"/>
+    <mesh file="Brush/Brush_collision_73.obj" name="Brush_collision_73"/>
+    <mesh file="Brush/Brush_collision_74.obj" name="Brush_collision_74"/>
+    <mesh file="Brush/Brush_collision_75.obj" name="Brush_collision_75"/>
+    <mesh file="Brush/Brush_collision_76.obj" name="Brush_collision_76"/>
+    <mesh file="Brush/Brush_collision_77.obj" name="Brush_collision_77"/>
+    <mesh file="Brush/Brush_collision_78.obj" name="Brush_collision_78"/>
+    <mesh file="Brush/Brush_collision_79.obj" name="Brush_collision_79"/>
+    <mesh file="Brush/Brush_collision_80.obj" name="Brush_collision_80"/>
+    <mesh file="Brush/Brush_collision_81.obj" name="Brush_collision_81"/>
+    <mesh file="Brush/Brush_collision_82.obj" name="Brush_collision_82"/>
+    <mesh file="Brush/Brush_collision_83.obj" name="Brush_collision_83"/>
+  </asset>
+  <worldbody>
+    <body name="Brush">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Brush" class="visual"/>
+      <geom mesh="Brush_collision_0" rgba="0.9874198468722268 0.37898026391708717 0.1900729855069493 1" class="collision"/>
+      <geom mesh="Brush_collision_1" rgba="0.9345675786843269 0.1293616295695782 0.7865505811331283 1" class="collision"/>
+      <geom mesh="Brush_collision_2" rgba="0.6999181659309581 0.5459550299752024 0.4467715048997988 1" class="collision"/>
+      <geom mesh="Brush_collision_3" rgba="0.7551690998465665 0.5758503072917995 0.1441347849105925 1" class="collision"/>
+      <geom mesh="Brush_collision_4" rgba="0.46619090241523276 0.06294059776671423 0.019305490319967644 1" class="collision"/>
+      <geom mesh="Brush_collision_5" rgba="0.16645794269849834 0.210255992106971 0.6330638204852505 1" class="collision"/>
+      <geom mesh="Brush_collision_6" rgba="0.5692896865570071 0.05595106399896732 0.7572813612252636 1" class="collision"/>
+      <geom mesh="Brush_collision_7" rgba="0.7552947229972978 0.3827713408236618 0.7222462568895525 1" class="collision"/>
+      <geom mesh="Brush_collision_8" rgba="0.9984719480253573 0.09797284143031959 0.9237380650473243 1" class="collision"/>
+      <geom mesh="Brush_collision_9" rgba="0.4528539155163154 0.5543210640426172 0.5091592020977801 1" class="collision"/>
+      <geom mesh="Brush_collision_10" rgba="0.5339172066514244 0.12270107231204008 0.27312107256818874 1" class="collision"/>
+      <geom mesh="Brush_collision_11" rgba="0.6373371541306149 0.5658159132072289 0.3588877165996598 1" class="collision"/>
+      <geom mesh="Brush_collision_12" rgba="0.23615391969628452 0.7139886325386489 0.8228488407684134 1" class="collision"/>
+      <geom mesh="Brush_collision_13" rgba="0.7885308262622005 0.33386325500986214 0.8939188910485276 1" class="collision"/>
+      <geom mesh="Brush_collision_14" rgba="0.5669859141601417 0.08087851888968833 0.36223838368678296 1" class="collision"/>
+      <geom mesh="Brush_collision_15" rgba="0.5916726284630497 0.8857368648379851 0.4160838683065 1" class="collision"/>
+      <geom mesh="Brush_collision_16" rgba="0.9139234673124124 0.13907242722193158 0.45337347168019126 1" class="collision"/>
+      <geom mesh="Brush_collision_17" rgba="0.567687889431723 0.3866548828026747 0.8148945659894617 1" class="collision"/>
+      <geom mesh="Brush_collision_18" rgba="0.5525925196575997 0.10722874237530833 0.11349389198803084 1" class="collision"/>
+      <geom mesh="Brush_collision_19" rgba="0.3469397082846525 0.6358580959306122 0.8194997497450991 1" class="collision"/>
+      <geom mesh="Brush_collision_20" rgba="0.9884339010789801 0.6378918717862009 0.3157036205751047 1" class="collision"/>
+      <geom mesh="Brush_collision_21" rgba="0.24240090624588873 0.28705956657298515 0.8206230301422239 1" class="collision"/>
+      <geom mesh="Brush_collision_22" rgba="0.05759401031795286 0.29101632049657233 0.9782060371058124 1" class="collision"/>
+      <geom mesh="Brush_collision_23" rgba="0.042175739444820004 0.6121414775513021 0.28115483981102674 1" class="collision"/>
+      <geom mesh="Brush_collision_24" rgba="0.1688541427232394 0.43156536050337624 0.9679416748470078 1" class="collision"/>
+      <geom mesh="Brush_collision_25" rgba="0.5221608513778344 0.20622783032812164 0.15420633094741698 1" class="collision"/>
+      <geom mesh="Brush_collision_26" rgba="0.9920939132886704 0.5648893619834333 0.015029624926267249 1" class="collision"/>
+      <geom mesh="Brush_collision_27" rgba="0.7128828218597141 0.9900242684855248 0.6609135024935616 1" class="collision"/>
+      <geom mesh="Brush_collision_28" rgba="0.2548957913817834 0.5111609711894519 0.16106365835483305 1" class="collision"/>
+      <geom mesh="Brush_collision_29" rgba="0.44730471242247594 0.3391009296891433 0.9122906363502793 1" class="collision"/>
+      <geom mesh="Brush_collision_30" rgba="0.04156530201541597 0.18327563391343626 0.11270176338601079 1" class="collision"/>
+      <geom mesh="Brush_collision_31" rgba="0.9145890337745215 0.1586667880002126 0.34248506885898033 1" class="collision"/>
+      <geom mesh="Brush_collision_32" rgba="0.5080924447330318 0.5724243932274619 0.26187873119061844 1" class="collision"/>
+      <geom mesh="Brush_collision_33" rgba="0.9444856723288768 0.7862058272621498 0.0942136306280078 1" class="collision"/>
+      <geom mesh="Brush_collision_34" rgba="0.9637104189184194 0.25393712309839345 0.6415081661408746 1" class="collision"/>
+      <geom mesh="Brush_collision_35" rgba="0.6687829531037464 0.9890115292949304 0.5067166224468953 1" class="collision"/>
+      <geom mesh="Brush_collision_36" rgba="0.6257044126633214 0.7326603842987057 0.8873653021395475 1" class="collision"/>
+      <geom mesh="Brush_collision_37" rgba="0.034636334362888155 0.4984913780429766 0.2735004759514844 1" class="collision"/>
+      <geom mesh="Brush_collision_38" rgba="0.4875056933464831 0.8449605328291517 0.4911331826646569 1" class="collision"/>
+      <geom mesh="Brush_collision_39" rgba="0.9958715573190348 0.8608038670681296 0.042885394307759284 1" class="collision"/>
+      <geom mesh="Brush_collision_40" rgba="0.2586655001553487 0.23878880279472514 0.5810110679638665 1" class="collision"/>
+      <geom mesh="Brush_collision_41" rgba="0.32799021848037324 0.02633124907215456 0.5569327552661332 1" class="collision"/>
+      <geom mesh="Brush_collision_42" rgba="0.662702236871748 0.26018041052571084 0.10718017341549602 1" class="collision"/>
+      <geom mesh="Brush_collision_43" rgba="0.5945600059759768 0.5812451910218185 0.9472501633693571 1" class="collision"/>
+      <geom mesh="Brush_collision_44" rgba="0.7294674901167788 0.7497188228714698 0.46509743007654736 1" class="collision"/>
+      <geom mesh="Brush_collision_45" rgba="0.11966176373895432 0.35390848429966726 0.639632261697436 1" class="collision"/>
+      <geom mesh="Brush_collision_46" rgba="0.8968170742286212 0.14262018424379974 0.09062125596467663 1" class="collision"/>
+      <geom mesh="Brush_collision_47" rgba="0.6271239659477169 0.0933567808048833 0.818094528658747 1" class="collision"/>
+      <geom mesh="Brush_collision_48" rgba="0.9851717871043509 0.12816913639085592 0.20740334673116256 1" class="collision"/>
+      <geom mesh="Brush_collision_49" rgba="0.21041978571239162 0.962858172496616 0.3083773472649698 1" class="collision"/>
+      <geom mesh="Brush_collision_50" rgba="0.30400113794860073 0.04463367723375078 0.39347661108856413 1" class="collision"/>
+      <geom mesh="Brush_collision_51" rgba="0.25711514467095764 0.48335556068652097 0.9613572874261495 1" class="collision"/>
+      <geom mesh="Brush_collision_52" rgba="0.20929293498488322 0.623100722625897 0.16185896294322144 1" class="collision"/>
+      <geom mesh="Brush_collision_53" rgba="0.469501624972545 0.4240675313710177 0.5132232534456072 1" class="collision"/>
+      <geom mesh="Brush_collision_54" rgba="0.7120285896518945 0.6342799454962237 0.0995037926163248 1" class="collision"/>
+      <geom mesh="Brush_collision_55" rgba="0.5162370658859848 0.20134301303532554 0.03037601509714427 1" class="collision"/>
+      <geom mesh="Brush_collision_56" rgba="0.9376292180383521 0.3431483377659217 0.033266265472935985 1" class="collision"/>
+      <geom mesh="Brush_collision_57" rgba="0.5772614469489484 0.7337509793138643 0.8439337906236667 1" class="collision"/>
+      <geom mesh="Brush_collision_58" rgba="0.0830172899906303 0.916441937033552 0.7378740825051405 1" class="collision"/>
+      <geom mesh="Brush_collision_59" rgba="0.8772129517728622 0.001979446809821428 0.738926083419919 1" class="collision"/>
+      <geom mesh="Brush_collision_60" rgba="0.3163839179179948 0.7842417815727577 0.759462073045978 1" class="collision"/>
+      <geom mesh="Brush_collision_61" rgba="0.8231694417170812 0.7040847209716936 0.8891095827908728 1" class="collision"/>
+      <geom mesh="Brush_collision_62" rgba="0.21835904740734602 0.4126899855729752 0.5555204445667986 1" class="collision"/>
+      <geom mesh="Brush_collision_63" rgba="0.1565198039690896 0.8091372143706733 0.5275692983507471 1" class="collision"/>
+      <geom mesh="Brush_collision_64" rgba="0.3131124841541375 0.023040310341016612 0.04601129823358596 1" class="collision"/>
+      <geom mesh="Brush_collision_65" rgba="0.4314383028947849 0.3993311261556616 0.02512926850702124 1" class="collision"/>
+      <geom mesh="Brush_collision_66" rgba="0.34379248576549104 0.5254282357857967 0.1580794813636065 1" class="collision"/>
+      <geom mesh="Brush_collision_67" rgba="0.7893230732157113 0.24125502717341107 0.4516559951027622 1" class="collision"/>
+      <geom mesh="Brush_collision_68" rgba="0.14943082169099742 0.3250384662811482 0.10103132936941361 1" class="collision"/>
+      <geom mesh="Brush_collision_69" rgba="0.6070526824087972 0.36050611035210733 0.7820600331960387 1" class="collision"/>
+      <geom mesh="Brush_collision_70" rgba="0.6511088042861685 0.7490173634059154 0.4753055715993917 1" class="collision"/>
+      <geom mesh="Brush_collision_71" rgba="0.6224335000374354 0.7275074545041511 0.6541657253136299 1" class="collision"/>
+      <geom mesh="Brush_collision_72" rgba="0.4973188109125123 0.6468377292237544 0.4861503918044787 1" class="collision"/>
+      <geom mesh="Brush_collision_73" rgba="0.484210191097182 0.02132792846580367 0.6093609428068977 1" class="collision"/>
+      <geom mesh="Brush_collision_74" rgba="0.3610661087590753 0.8291353864720735 0.7344118227274724 1" class="collision"/>
+      <geom mesh="Brush_collision_75" rgba="0.12044534056229339 0.7375537997663065 0.6260749306400178 1" class="collision"/>
+      <geom mesh="Brush_collision_76" rgba="0.6272231315490463 0.18638400941511724 0.25411779840416593 1" class="collision"/>
+      <geom mesh="Brush_collision_77" rgba="0.5192444144451488 0.46327516556851245 0.1621977761178518 1" class="collision"/>
+      <geom mesh="Brush_collision_78" rgba="0.21876351194557264 0.40003715731235856 0.38168052168181466 1" class="collision"/>
+      <geom mesh="Brush_collision_79" rgba="0.9780833784816951 0.46293212853533205 0.08553507481016798 1" class="collision"/>
+      <geom mesh="Brush_collision_80" rgba="0.9747751076895363 0.7481454815561621 0.19746864878677717 1" class="collision"/>
+      <geom mesh="Brush_collision_81" rgba="0.4515922340872709 0.3098293997578978 0.8722006601953856 1" class="collision"/>
+      <geom mesh="Brush_collision_82" rgba="0.44608604026232657 0.10368554033236765 0.45010968039300414 1" class="collision"/>
+      <geom mesh="Brush_collision_83" rgba="0.9060186803678284 0.10816552093805876 0.8079083738361824 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

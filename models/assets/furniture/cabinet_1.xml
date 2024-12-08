@@ -1,0 +1,86 @@
+<mujoco model="hinge cabinet">
+    <compiler inertiafromgeom="auto" inertiagrouprange="1 4" angle="radian"/>
+
+    <asset>
+        <texture name="T_hinge_wood" type="cube" height="1" width="1" file="common/textures/wood3.png"/>
+        <texture name="T_hinge_metal" type="cube" height="1" width="1" file="common/textures/metal0.png"/>
+
+        <material name="M_hinge_wood" texture="T_hinge_wood" texrepeat="3 3" reflectance="0.7" shininess=".4" texuniform="false"/>
+        <material name="M_hinge_metal" texture="T_hinge_metal" texrepeat="3 3" reflectance="0.7" shininess=".4" texuniform="false"/>
+        <material name="M_hinge_blue" texture="T_hinge_wood" rgba="1 1 1 1" reflectance="0.7" shininess=".4" texuniform="false"/>
+        <material name="hinge_collision_blue" rgba="0.3 0.3 1.0 0.5" shininess="0" specular="0"/>
+    </asset>
+
+    <default>
+        <default class="hingecabinet">
+            <joint damping="2" frictionloss="2" armature=".01" limited="true"/>
+            <geom conaffinity="0" contype="0" group="1" material="M_hinge_wood" type="mesh"/>
+            <default class="hinge_collision">
+                <geom conaffinity="1" condim="3" contype="0" group="4" margin="0.001" material="hinge_collision_blue" solimp=".8 .9 .01" solref=".02 1"/>
+            </default>
+        </default>
+    </default>
+
+
+    <actuator>
+        <position joint="leftdoorhinge" ctrlrange="-1.57 0" name="leftdoorhinge_j" ctrllimited="true" kp="30"/>
+        <position joint="rightdoorhinge" ctrlrange="0 1.57" name="rightdoorhinge_j" ctrllimited="true" kp="30"/>
+    </actuator>
+
+    <sensor>
+        <jointpos name="leftdoorhinge" joint="leftdoorhinge"/>
+        <jointpos name="rightdoorhinge" joint="rightdoorhinge"/>
+    </sensor>
+
+
+    <worldbody>
+        <body name="hingecab" childclass="hingecabinet">
+            <geom material="M_hinge_blue" pos="0 0 0.21" size="0.04 0.3 0.2" type="box"/>
+            <geom material="M_hinge_blue" pos="0.38 0 0.21" size="0.02 0.3 0.2" type="box"/>
+            <geom material="M_hinge_blue" pos="-0.38 0 0.21" size="0.02 0.3 0.2" type="box"/>
+            <geom material="M_hinge_blue" pos="-0.2 0 0.39" size="0.16 0.3 0.02" type="box"/>
+            <geom material="M_hinge_blue" pos="-0.2 0 0.03" size="0.16 0.3 0.02" type="box"/>
+            <geom material="M_hinge_blue" pos="0.2 0 0.03" size="0.16 0.3 0.02" type="box"/>
+            <geom material="M_hinge_blue" pos="0.2 0 0.39" size="0.16 0.3 0.02" type="box"/>
+            <geom material="M_hinge_blue" pos="-0.2 0.28 0.21" size="0.16 0.02 0.16" type="box"/>
+            <geom material="M_hinge_blue" pos="0.2 0.28 0.21" size="0.16 0.02 0.16" type="box"/>
+
+            <geom class="hinge_collision" size="0.04 0.3 0.2" type="box" mass=".3"/>
+            <geom class="hinge_collision" pos="0.38 0 0.21" size="0.02 0.3 0.2" type="box" mass=".2"/>
+            <geom class="hinge_collision" pos="-0.38 0 0.21" size="0.02 0.3 0.2" type="box" mass=".2"/>
+            <geom class="hinge_collision" pos="-0.2 0 0.39" size="0.16 0.3 0.02" type="box" mass=".2"/>
+            <geom class="hinge_collision" pos="-0.2 0 0.03" size="0.16 0.3 0.02" type="box" mass=".2"/>
+            <geom class="hinge_collision" pos="0.2 0 0.03" size="0.16 0.3 0.02" type="box" mass=".2"/>
+            <geom class="hinge_collision" pos="0.2 0 0.39" size="0.16 0.3 0.02" type="box" mass=".2"/>
+            <geom class="hinge_collision" pos="-0.2 0.28 0.21" size="0.16 0.02 0.16" type="box" mass=".2"/>
+            <geom class="hinge_collision" pos="0.2 0.28 0.21" size="0.16 0.02 0.16" type="box" mass=".2"/>
+            <body name="hingeleftdoor" pos="-0.38 -0.32 0.21">
+                <joint axis="0 0 1" name="leftdoorhinge" range="-1.57 0"/>
+                <geom material="M_hinge_metal" pos="0.302 -0.128 0" size="0.022 0.16" type="cylinder"/>
+                <geom material="M_hinge_metal" pos="0.302 -0.061 0.114" euler="1.57 0 0" size="0.019 0.053 0.02" type="cylinder"/>
+                <geom material="M_hinge_metal" pos="0.302 -0.061 -0.114" euler="1.57 0 0" size="0.019 0.053 0.02" type="cylinder"/>
+                <geom material="M_hinge_blue" pos="0.184 -.015 0" size="0.193 0.03 0.2" type="box"/>
+
+                <geom class="hinge_collision" pos="0.184 -.015 0" size="0.193 0.03 0.2" type="box" mass=".2"/>
+                <geom class="hinge_collision" pos="0.302 -0.128 0" size="0.022 0.16" type="cylinder" mass=".1"/>
+                <geom class="hinge_collision" pos="0.302 -0.061 0.114" euler="1.57 0 0" size="0.019 0.053 0.02" type="cylinder" mass=".02"/>
+                <geom class="hinge_collision" pos="0.302 -0.061 -0.114" euler="1.57 0 0" size="0.019 0.053 0.02" type="cylinder" mass=".02"/>
+                <site type="sphere" name="leftdoor_site" pos="0.302 -0.128 0" size=".01" group="3" rgba="1 0 0 1"/>
+            </body>
+            <body name="hingerightdoor" pos="0.38 -0.32 0.21">
+                <joint axis="0 0 1" name="rightdoorhinge" range="0 1.57"/>
+                <geom material="M_hinge_blue" pos="-0.185 -.015 0" size="0.193 0.03 0.2" type="box"/>
+                <geom material="M_hinge_metal" pos="-0.302 -0.128 0" size="0.022 0.16" type="cylinder"/>
+                <geom material="M_hinge_metal" pos="-0.302 -0.061 -0.114" euler="1.57 0 0" size="0.019 0.053 0.02" type="cylinder"/>
+                <geom material="M_hinge_metal" pos="-0.302 -0.061 0.114" euler="1.57 0 0" size="0.019 0.053 0.02" type="cylinder"/>
+
+                <geom class="hinge_collision" pos="-0.302 -0.128 0" size="0.022 0.16" type="cylinder" mass=".1"/>
+                <geom class="hinge_collision" pos="-0.302 -0.061 -0.114" euler="1.57 0 0" size="0.019 0.053 0.02" type="cylinder" mass=".02"/>
+                <geom class="hinge_collision" pos="-0.302 -0.061 0.114" euler="1.57 0 0" size="0.019 0.053 0.02" type="cylinder" mass=".02"/>
+                <geom class="hinge_collision" pos="-0.185 -.015 0" size="0.193 0.03 0.2" type="box" mass=".2"/>
+                <site type="sphere" name="rightdoor_site" pos="-0.302 -0.128 0" size=".01" group="3" rgba="0 1 0 1"/>
+            </body>
+        </body>
+    </worldbody>
+
+</mujoco>

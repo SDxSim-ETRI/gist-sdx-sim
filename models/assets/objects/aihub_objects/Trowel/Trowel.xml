@@ -1,0 +1,26 @@
+<mujoco model="Trowel">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Trowel_BaseColor" file="Trowel_BaseColor.png"/>
+    <material name="material_0" texture="Trowel_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Trowel.obj"/>
+    <mesh file="Trowel_collision_0.obj"/>
+    <mesh file="Trowel_collision_1.obj"/>
+    <mesh file="Trowel_collision_2.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Trowel">
+      <geom material="material_0" mesh="Trowel" class="visual"/>
+      <geom mesh="Trowel_collision_0" rgba="0.5968978383863032 0.43119720183774013 0.7390594714308054 1" class="collision"/>
+      <geom mesh="Trowel_collision_1" rgba="0.5474219509996819 0.4577977567960879 0.5416682720675242 1" class="collision"/>
+      <geom mesh="Trowel_collision_2" rgba="0.32861549206692087 0.49728870192285 0.579448577214901 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

@@ -1,0 +1,100 @@
+<mujoco model="studyTable">
+
+    <compiler angle="radian" meshdir="" texturedir=""/>
+
+    <asset>
+
+        <mesh name="studyTable_Main" file="vanity/meshes/studyTable_Main.stl" scale="0.01 0.01 0.01" />
+        <mesh name="studyTable_Slide_Wood" file="vanity/meshes/studyTable_Slide_Wood.stl" scale="0.01 0.01 0.01" />
+        <mesh name="studyTable_Slide_Handle" file="vanity/meshes/studyTable_Slide_Handle.stl" scale="0.01 0.01 0.01" />
+        <mesh name="studyTable_Drawer_Wood" file="vanity/meshes/studyTable_Drawer_Wood.stl" scale="0.01 0.01 0.01" />
+        <mesh name="studyTable_Drawer_Handle" file="vanity/meshes/studyTable_Drawer_Handle.stl" scale="0.01 0.01 0.01" />
+        <texture name="T_Wood_studyTable" type="cube" height="1" width="1" file="common/textures/wood0.png" />
+        <texture name="T_Metal_studyTable" type="cube" height="1" width="1" file="common/textures/metal0.png" />
+
+        <material name="M_Wood_studyTable" texture="T_Wood_studyTable" rgba="0.8 0.8 0.8 1" shininess="0.2" reflectance="0.3" texuniform="false" />
+        <material name="M_Metal_studyTable" texture="T_Metal_studyTable" texrepeat="3 3" reflectance="0.7" texuniform="false" />
+
+		</asset>
+
+    <default>
+
+        <default class="viz_stl_Metal_studyTable" >
+            <geom group="1" contype="0" conaffinity="0" type="mesh" material="M_Metal_studyTable" />
+        </default>
+
+         <default class="viz_stl_Wood_studyTable" >
+            <geom group="1" contype="0" conaffinity="0" type="mesh" material="M_Wood_studyTable"/>
+        </default>
+
+        <default class="drawer_studyTable" >
+            <geom contype="1" conaffinity="1" group="3" rgba="1 0 0 1" />
+            <joint limited="true" damping="2" frictionloss="5" armature="0.1" />
+        </default>
+
+        <default class="body_studyTable" >
+            <geom contype="1" conaffinity="1" group="4" rgba="0 1 0 1" />
+            <joint limited="true" damping="1" frictionloss="0.5" armature=".01" />
+        </default>
+
+   </default>
+
+
+    <actuator>
+        <position joint="studyTable_Drawer_Joint" name = 'studyTable_Drawer_Joint_j' ctrllimited="true" ctrlrange="-0.48 0" kp="200" />
+        <position joint="studyTable_Slide_Joint" name = 'studyTable_Slide_Joint_j' ctrllimited="true"  ctrlrange="0 .6" kp="100" />
+    </actuator>
+
+
+    <sensor>
+        <jointpos name="studyTable_Drawer_Joint" joint="studyTable_Drawer_Joint"/>
+        <jointpos name="studyTable_Slide_Joint" joint="studyTable_Slide_Joint"/>
+    </sensor>
+
+
+   <worldbody>
+        <body name="studyTable_Main" pos="0 0 0"  childclass="body_studyTable" >
+            <geom class="viz_stl_Wood_studyTable" type="mesh" mesh="studyTable_Main" euler="-1.57 0 3.14"/>
+            <geom type="box" size=".6 .275 .025" pos="0 0 0.735" rgba="0.8 0.9 0.7 1.0" mass="40" />
+            <geom type="box" size="0.17 0.26 .05" pos="0.42 0 0.66" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.17 0.26 .05" pos="-0.42 0 0.66" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.025 0.025 0.305" pos="-0.565 0.235 0.305" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.025 0.025 0.305" pos="-0.565 -0.235 0.305" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.025 0.025 0.305" pos="0.565 0.235 0.305" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.025 0.025 0.305" pos="0.565 -0.235 0.305" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.6 0.01 0.175" pos="0 0.265 0.935" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.6 0.11 0.01" pos="0 0.165 1.1" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.01 0.11 0.175" pos="0.59 .165 .935" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.01 0.11 0.175" pos="-0.59 .165 .935" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size="0.01 0.11 0.175" pos="0 .165 .935" rgba="0.8 0.9 0.7 1.0"/>
+        </body>
+
+        <!-- studyTable_Drawer -©vk©-->
+        <body name="studyTable_Drawer" pos="0 0 0.655" childclass="drawer_studyTable" >
+            <geom class="viz_stl_Wood_studyTable" type="mesh" mesh="studyTable_Drawer_Wood" euler="-1.57 0 3.14"/>
+            <geom class="viz_stl_Metal_studyTable" type="mesh" mesh="studyTable_Drawer_Handle" euler="-1.57 0 3.14"/>
+            <geom type="box" size=".24 .26 .01" pos="0 0 -0.04" rgba="0.8 0.9 0.7 1.0" mass="2" />
+            <geom type="box" size=".24 .01 .05" pos="0 .25 0" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size=".24 .01 .05" pos="0 -.25 0" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size=".01 .26 .05" pos="-.23 0 0" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="box" size=".01 .26 .05" pos=".23 0 0" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="capsule" size=".014 .045" pos=".08203 -.315 .01" euler="1.57 0 0" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="capsule" size=".014 .045" pos="-.08203 -.315 .01" euler="1.57 0 0" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="capsule" size=".014 .08" pos="0 -.36 .01" euler="0 1.57 0" rgba="0.8 0.9 0.7 1.0" />
+            <joint name="studyTable_Drawer_Joint" type="slide" pos="0 0 0" axis="0 1 0" limited="true" range="-0.48 0" />
+        </body>
+
+        <!-- studyTable_Slide -©vk©-->
+        <body name="studyTable_Slide" pos="-0.3 0.04 0.935" childclass="drawer_studyTable" >
+            <geom class="viz_stl_Wood_studyTable" type="mesh" mesh="studyTable_Slide_Wood" euler="-1.57 0 3.14"/>
+            <geom class="viz_stl_Metal_studyTable" type="mesh" mesh="studyTable_Slide_Handle" euler="-1.57 0 3.14"/>
+            <geom type="box" size=".3 .01 .175" pos="0 0 0" rgba="0.8 0.9 0.7 1.0" mass="1" />
+            <geom type="capsule" size=".014 .042" pos="0 -.065 .08302" euler="1.57 0 0" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="capsule" size=".014 .042" pos="0 -.065 -.08302" euler="1.57 0 0" rgba="0.8 0.9 0.7 1.0" />
+            <geom type="capsule" size=".014 .08" pos="0 -.11 0" euler="0 0 0" rgba="0.8 0.9 0.7 1.0" />
+            <site name='slide_handle' type='sphere' size='.01' pos='0 -.11 0'/>
+            <joint name="studyTable_Slide_Joint" type="slide" pos="0 0 0" axis="1 0 0" limited="true" range="0 .6" />
+        </body>
+
+   </worldbody>
+</mujoco>

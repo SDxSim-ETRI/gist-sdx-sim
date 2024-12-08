@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Wallpaper knife">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Wallpaper knife" file="Wallpaper knife/Wallpaper knife.png"/>
+    <material name="material_0" texture="Wallpaper knife" specular="1.0" shininess="1.0"/>
+    <mesh file="Wallpaper knife/Wallpaper knife.obj" name="Wallpaper knife"/>
+    <mesh file="Wallpaper knife/Wallpaper knife_collision_0.obj" name="Wallpaper knife_collision_0"/>
+    <mesh file="Wallpaper knife/Wallpaper knife_collision_1.obj" name="Wallpaper knife_collision_1"/>
+  </asset>
+  <worldbody>
+    <body name="Wallpaper knife">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Wallpaper knife" class="visual"/>
+      <geom mesh="Wallpaper knife_collision_0" rgba="0.515440010680687 0.6479417950815655 0.3989187755879644 1" class="collision"/>
+      <geom mesh="Wallpaper knife_collision_1" rgba="0.4302671023347354 0.6787393449038776 0.9347105045478641 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

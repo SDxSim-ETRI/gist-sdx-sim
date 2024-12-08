@@ -1,0 +1,34 @@
+<mujoco model="Gas torch">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Gas torch_BaseColor" file="Gas torch_BaseColor.png"/>
+    <material name="material_0" texture="Gas torch_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Gas torch.obj"/>
+    <mesh file="Gas torch_collision_0.obj"/>
+    <mesh file="Gas torch_collision_1.obj"/>
+    <mesh file="Gas torch_collision_2.obj"/>
+    <mesh file="Gas torch_collision_3.obj"/>
+    <mesh file="Gas torch_collision_4.obj"/>
+    <mesh file="Gas torch_collision_5.obj"/>
+    <mesh file="Gas torch_collision_6.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Gas torch">
+      <geom material="material_0" mesh="Gas torch" class="visual"/>
+      <geom mesh="Gas torch_collision_0" rgba="0.8800132950975282 0.12898089179253824 0.7434362650336909 1" class="collision"/>
+      <geom mesh="Gas torch_collision_1" rgba="0.24156583397770104 0.7541431750820666 0.45066521205033727 1" class="collision"/>
+      <geom mesh="Gas torch_collision_2" rgba="0.5490886949400834 0.4501214565272975 0.2981277049603622 1" class="collision"/>
+      <geom mesh="Gas torch_collision_3" rgba="0.12712399139832853 0.0152148473645084 0.6280625862733419 1" class="collision"/>
+      <geom mesh="Gas torch_collision_4" rgba="0.6636345082869278 0.5286492868753127 0.26839766133791554 1" class="collision"/>
+      <geom mesh="Gas torch_collision_5" rgba="0.7250523175616542 0.35322473395352005 0.4548722313086192 1" class="collision"/>
+      <geom mesh="Gas torch_collision_6" rgba="0.735201034057398 0.977872850333274 0.6506267674860925 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

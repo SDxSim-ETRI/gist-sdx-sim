@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Sprayer">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Sprayer" file="Sprayer/Sprayer.png"/>
+    <material name="material_0" texture="Sprayer" specular="1.0" shininess="0.5"/>
+    <mesh file="Sprayer/Sprayer.obj" name="Sprayer"/>
+    <mesh file="Sprayer/Sprayer_collision_0.obj" name="Sprayer_collision_0"/>
+    <mesh file="Sprayer/Sprayer_collision_1.obj" name="Sprayer_collision_1"/>
+    <mesh file="Sprayer/Sprayer_collision_2.obj" name="Sprayer_collision_2"/>
+    <mesh file="Sprayer/Sprayer_collision_3.obj" name="Sprayer_collision_3"/>
+    <mesh file="Sprayer/Sprayer_collision_4.obj" name="Sprayer_collision_4"/>
+    <mesh file="Sprayer/Sprayer_collision_5.obj" name="Sprayer_collision_5"/>
+    <mesh file="Sprayer/Sprayer_collision_6.obj" name="Sprayer_collision_6"/>
+  </asset>
+  <worldbody>
+    <body name="Sprayer">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Sprayer" class="visual"/>
+      <geom mesh="Sprayer_collision_0" rgba="0.6448812311877304 0.5418087243556935 0.8355459555339712 1" class="collision"/>
+      <geom mesh="Sprayer_collision_1" rgba="0.585579572601104 0.1457912052923661 0.9598273681354983 1" class="collision"/>
+      <geom mesh="Sprayer_collision_2" rgba="0.3673302641931423 0.4002714678393765 0.07279127115609829 1" class="collision"/>
+      <geom mesh="Sprayer_collision_3" rgba="0.6017535814353306 0.984368291799124 0.8188456956304826 1" class="collision"/>
+      <geom mesh="Sprayer_collision_4" rgba="0.9266940645344145 0.8599740767347338 0.2387675039049192 1" class="collision"/>
+      <geom mesh="Sprayer_collision_5" rgba="0.23083883134337957 0.8025199628809169 0.044285048570033014 1" class="collision"/>
+      <geom mesh="Sprayer_collision_6" rgba="0.3599779046827556 0.7434907439261295 0.9476236130619179 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

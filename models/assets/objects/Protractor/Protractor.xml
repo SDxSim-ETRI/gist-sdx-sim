@@ -1,0 +1,26 @@
+<mujoco model="Protractor">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Protractor_BaseColor" file="Protractor_BaseColor.png"/>
+    <material name="material_0" texture="Protractor_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Protractor.obj"/>
+    <mesh file="Protractor_collision_0.obj"/>
+    <mesh file="Protractor_collision_1.obj"/>
+    <mesh file="Protractor_collision_2.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Protractor">
+      <geom material="material_0" mesh="Protractor" class="visual"/>
+      <geom mesh="Protractor_collision_0" rgba="0.6999998471299561 0.02952925155434971 0.3241725122168454 1" class="collision"/>
+      <geom mesh="Protractor_collision_1" rgba="0.007182697512916225 0.8268344310540505 0.7050153568769392 1" class="collision"/>
+      <geom mesh="Protractor_collision_2" rgba="0.08149090329362596 0.32219125362983525 0.4028504970838789 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

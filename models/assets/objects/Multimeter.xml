@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Multimeter">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Multimeter" file="Multimeter/Multimeter.png"/>
+    <material name="material_0" texture="Multimeter" specular="1.0" shininess="1.0"/>
+    <mesh file="Multimeter/Multimeter.obj" name="Multimeter"/>
+    <mesh file="Multimeter/Multimeter_collision_0.obj" name="Multimeter_collision_0"/>
+    <mesh file="Multimeter/Multimeter_collision_1.obj" name="Multimeter_collision_1"/>
+    <mesh file="Multimeter/Multimeter_collision_2.obj" name="Multimeter_collision_2"/>
+    <mesh file="Multimeter/Multimeter_collision_3.obj" name="Multimeter_collision_3"/>
+    <mesh file="Multimeter/Multimeter_collision_4.obj" name="Multimeter_collision_4"/>
+    <mesh file="Multimeter/Multimeter_collision_5.obj" name="Multimeter_collision_5"/>
+    <mesh file="Multimeter/Multimeter_collision_6.obj" name="Multimeter_collision_6"/>
+    <mesh file="Multimeter/Multimeter_collision_7.obj" name="Multimeter_collision_7"/>
+    <mesh file="Multimeter/Multimeter_collision_8.obj" name="Multimeter_collision_8"/>
+    <mesh file="Multimeter/Multimeter_collision_9.obj" name="Multimeter_collision_9"/>
+    <mesh file="Multimeter/Multimeter_collision_10.obj" name="Multimeter_collision_10"/>
+    <mesh file="Multimeter/Multimeter_collision_11.obj" name="Multimeter_collision_11"/>
+    <mesh file="Multimeter/Multimeter_collision_12.obj" name="Multimeter_collision_12"/>
+    <mesh file="Multimeter/Multimeter_collision_13.obj" name="Multimeter_collision_13"/>
+    <mesh file="Multimeter/Multimeter_collision_14.obj" name="Multimeter_collision_14"/>
+    <mesh file="Multimeter/Multimeter_collision_15.obj" name="Multimeter_collision_15"/>
+    <mesh file="Multimeter/Multimeter_collision_16.obj" name="Multimeter_collision_16"/>
+    <mesh file="Multimeter/Multimeter_collision_17.obj" name="Multimeter_collision_17"/>
+    <mesh file="Multimeter/Multimeter_collision_18.obj" name="Multimeter_collision_18"/>
+  </asset>
+  <worldbody>
+    <body name="Multimeter">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Multimeter" class="visual"/>
+      <geom mesh="Multimeter_collision_0" rgba="0.6070463631792414 0.09976793221966651 0.6701961235648753 1" class="collision"/>
+      <geom mesh="Multimeter_collision_1" rgba="0.9528165104484424 0.47037200743457686 0.15297340257714798 1" class="collision"/>
+      <geom mesh="Multimeter_collision_2" rgba="0.24694298320920682 0.7688617754266067 0.6335670116824077 1" class="collision"/>
+      <geom mesh="Multimeter_collision_3" rgba="0.8725534030285333 0.13839224146098372 0.926884694221407 1" class="collision"/>
+      <geom mesh="Multimeter_collision_4" rgba="0.8093564263104809 0.6198677286074109 0.26091757821723527 1" class="collision"/>
+      <geom mesh="Multimeter_collision_5" rgba="0.6452532870438656 0.3684836611375042 0.6390364074715584 1" class="collision"/>
+      <geom mesh="Multimeter_collision_6" rgba="0.6283488365694833 0.7853931265616202 0.048151890278509635 1" class="collision"/>
+      <geom mesh="Multimeter_collision_7" rgba="0.7128758346346598 0.9644187416466116 0.8294563063299978 1" class="collision"/>
+      <geom mesh="Multimeter_collision_8" rgba="0.6087166151270589 0.045523161734151496 0.2072153022198 1" class="collision"/>
+      <geom mesh="Multimeter_collision_9" rgba="0.2310591456848976 0.8926925154919575 0.1855602904032686 1" class="collision"/>
+      <geom mesh="Multimeter_collision_10" rgba="0.8731485978297688 0.2678315983485017 0.1755081441488413 1" class="collision"/>
+      <geom mesh="Multimeter_collision_11" rgba="0.7404490275077248 0.3411207648903445 0.5971206580629514 1" class="collision"/>
+      <geom mesh="Multimeter_collision_12" rgba="0.13304495362554802 0.04612321026932953 0.317033241662271 1" class="collision"/>
+      <geom mesh="Multimeter_collision_13" rgba="0.3710426804680602 0.8987441741326828 0.48851709137019694 1" class="collision"/>
+      <geom mesh="Multimeter_collision_14" rgba="0.09335171349175064 0.5705887349284572 0.12211964458258084 1" class="collision"/>
+      <geom mesh="Multimeter_collision_15" rgba="0.7101533162178807 0.7962240700883296 0.0243987010310055 1" class="collision"/>
+      <geom mesh="Multimeter_collision_16" rgba="0.88668705976004 0.6964620387653023 0.16549694697366357 1" class="collision"/>
+      <geom mesh="Multimeter_collision_17" rgba="0.9249460350576328 0.49095987094561677 0.444801785135314 1" class="collision"/>
+      <geom mesh="Multimeter_collision_18" rgba="0.3265630414459082 0.6443646335427797 0.16412537165226715 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

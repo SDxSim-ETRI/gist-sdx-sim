@@ -1,0 +1,38 @@
+<mujoco model="Grease gun">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Grease gun" file="Grease gun.png"/>
+    <material name="material_0" texture="Grease gun" specular="1.0" shininess="1.0"/>
+    <mesh file="Grease gun.obj"/>
+    <mesh file="Grease gun_collision_0.obj"/>
+    <mesh file="Grease gun_collision_1.obj"/>
+    <mesh file="Grease gun_collision_2.obj"/>
+    <mesh file="Grease gun_collision_3.obj"/>
+    <mesh file="Grease gun_collision_4.obj"/>
+    <mesh file="Grease gun_collision_5.obj"/>
+    <mesh file="Grease gun_collision_6.obj"/>
+    <mesh file="Grease gun_collision_7.obj"/>
+    <mesh file="Grease gun_collision_8.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Grease gun">
+      <geom material="material_0" mesh="Grease gun" class="visual"/>
+      <geom mesh="Grease gun_collision_0" rgba="0.8550849711089645 0.7635702315844869 0.02450145715212182 1" class="collision"/>
+      <geom mesh="Grease gun_collision_1" rgba="0.17710136245451347 0.7404062605429942 0.1489411672610611 1" class="collision"/>
+      <geom mesh="Grease gun_collision_2" rgba="0.30224591482901464 0.005957398041099959 0.14207418057625343 1" class="collision"/>
+      <geom mesh="Grease gun_collision_3" rgba="0.33298865571014635 0.07301189452763535 0.7378272348223978 1" class="collision"/>
+      <geom mesh="Grease gun_collision_4" rgba="0.29748778071439486 0.03177643585405854 0.7008852225642045 1" class="collision"/>
+      <geom mesh="Grease gun_collision_5" rgba="0.25621490647485057 0.20038193473389 0.148291108926336 1" class="collision"/>
+      <geom mesh="Grease gun_collision_6" rgba="0.9510770393230488 0.45087262037429976 0.24814163875716222 1" class="collision"/>
+      <geom mesh="Grease gun_collision_7" rgba="0.5311554053861935 0.22061701914367304 0.7201265304324168 1" class="collision"/>
+      <geom mesh="Grease gun_collision_8" rgba="0.04554709778402266 0.8686310829787101 0.5476726524127628 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

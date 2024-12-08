@@ -1,0 +1,156 @@
+<mujoco model="Drill jig">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Drill jig" file="Drill jig.png"/>
+    <material name="material_0" texture="Drill jig" specular="1.0" shininess="1.0"/>
+    <mesh file="Drill jig.obj"/>
+    <mesh file="Drill jig_collision_0.obj"/>
+    <mesh file="Drill jig_collision_1.obj"/>
+    <mesh file="Drill jig_collision_2.obj"/>
+    <mesh file="Drill jig_collision_3.obj"/>
+    <mesh file="Drill jig_collision_4.obj"/>
+    <mesh file="Drill jig_collision_5.obj"/>
+    <mesh file="Drill jig_collision_6.obj"/>
+    <mesh file="Drill jig_collision_7.obj"/>
+    <mesh file="Drill jig_collision_8.obj"/>
+    <mesh file="Drill jig_collision_9.obj"/>
+    <mesh file="Drill jig_collision_10.obj"/>
+    <mesh file="Drill jig_collision_11.obj"/>
+    <mesh file="Drill jig_collision_12.obj"/>
+    <mesh file="Drill jig_collision_13.obj"/>
+    <mesh file="Drill jig_collision_14.obj"/>
+    <mesh file="Drill jig_collision_15.obj"/>
+    <mesh file="Drill jig_collision_16.obj"/>
+    <mesh file="Drill jig_collision_17.obj"/>
+    <mesh file="Drill jig_collision_18.obj"/>
+    <mesh file="Drill jig_collision_19.obj"/>
+    <mesh file="Drill jig_collision_20.obj"/>
+    <mesh file="Drill jig_collision_21.obj"/>
+    <mesh file="Drill jig_collision_22.obj"/>
+    <mesh file="Drill jig_collision_23.obj"/>
+    <mesh file="Drill jig_collision_24.obj"/>
+    <mesh file="Drill jig_collision_25.obj"/>
+    <mesh file="Drill jig_collision_26.obj"/>
+    <mesh file="Drill jig_collision_27.obj"/>
+    <mesh file="Drill jig_collision_28.obj"/>
+    <mesh file="Drill jig_collision_29.obj"/>
+    <mesh file="Drill jig_collision_30.obj"/>
+    <mesh file="Drill jig_collision_31.obj"/>
+    <mesh file="Drill jig_collision_32.obj"/>
+    <mesh file="Drill jig_collision_33.obj"/>
+    <mesh file="Drill jig_collision_34.obj"/>
+    <mesh file="Drill jig_collision_35.obj"/>
+    <mesh file="Drill jig_collision_36.obj"/>
+    <mesh file="Drill jig_collision_37.obj"/>
+    <mesh file="Drill jig_collision_38.obj"/>
+    <mesh file="Drill jig_collision_39.obj"/>
+    <mesh file="Drill jig_collision_40.obj"/>
+    <mesh file="Drill jig_collision_41.obj"/>
+    <mesh file="Drill jig_collision_42.obj"/>
+    <mesh file="Drill jig_collision_43.obj"/>
+    <mesh file="Drill jig_collision_44.obj"/>
+    <mesh file="Drill jig_collision_45.obj"/>
+    <mesh file="Drill jig_collision_46.obj"/>
+    <mesh file="Drill jig_collision_47.obj"/>
+    <mesh file="Drill jig_collision_48.obj"/>
+    <mesh file="Drill jig_collision_49.obj"/>
+    <mesh file="Drill jig_collision_50.obj"/>
+    <mesh file="Drill jig_collision_51.obj"/>
+    <mesh file="Drill jig_collision_52.obj"/>
+    <mesh file="Drill jig_collision_53.obj"/>
+    <mesh file="Drill jig_collision_54.obj"/>
+    <mesh file="Drill jig_collision_55.obj"/>
+    <mesh file="Drill jig_collision_56.obj"/>
+    <mesh file="Drill jig_collision_57.obj"/>
+    <mesh file="Drill jig_collision_58.obj"/>
+    <mesh file="Drill jig_collision_59.obj"/>
+    <mesh file="Drill jig_collision_60.obj"/>
+    <mesh file="Drill jig_collision_61.obj"/>
+    <mesh file="Drill jig_collision_62.obj"/>
+    <mesh file="Drill jig_collision_63.obj"/>
+    <mesh file="Drill jig_collision_64.obj"/>
+    <mesh file="Drill jig_collision_65.obj"/>
+    <mesh file="Drill jig_collision_66.obj"/>
+    <mesh file="Drill jig_collision_67.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Drill jig">
+      <geom material="material_0" mesh="Drill jig" class="visual"/>
+      <geom mesh="Drill jig_collision_0" rgba="0.11606417285110637 0.32738042568628223 0.5532230391009352 1" class="collision"/>
+      <geom mesh="Drill jig_collision_1" rgba="0.1606179286906586 0.29063393432961526 0.8364249798531895 1" class="collision"/>
+      <geom mesh="Drill jig_collision_2" rgba="0.2771354034968059 0.9209574722725554 0.7659709630204706 1" class="collision"/>
+      <geom mesh="Drill jig_collision_3" rgba="0.7054327623312099 0.49855582649451746 0.051526197880466196 1" class="collision"/>
+      <geom mesh="Drill jig_collision_4" rgba="0.8413507321336596 0.5740041565180957 0.4659196948557336 1" class="collision"/>
+      <geom mesh="Drill jig_collision_5" rgba="0.45535673633484275 0.6665525421787561 0.10744745095328012 1" class="collision"/>
+      <geom mesh="Drill jig_collision_6" rgba="0.787611073054505 0.04224862790893724 0.9519987635150725 1" class="collision"/>
+      <geom mesh="Drill jig_collision_7" rgba="0.5772329609314143 0.13839187954053445 0.3272451554693038 1" class="collision"/>
+      <geom mesh="Drill jig_collision_8" rgba="0.4430157054361221 0.025175852572259183 0.20698341369303896 1" class="collision"/>
+      <geom mesh="Drill jig_collision_9" rgba="0.5679780791450946 0.5485054219298077 0.003585266399528164 1" class="collision"/>
+      <geom mesh="Drill jig_collision_10" rgba="0.3117265414713323 0.6677994146443924 0.6214646771347583 1" class="collision"/>
+      <geom mesh="Drill jig_collision_11" rgba="0.14199321054576197 0.10021965608174199 0.5526132290673716 1" class="collision"/>
+      <geom mesh="Drill jig_collision_12" rgba="0.7595648446573774 0.3682002259093502 0.4398798656451517 1" class="collision"/>
+      <geom mesh="Drill jig_collision_13" rgba="0.09532189280721481 0.2703950179030209 0.9712331683817006 1" class="collision"/>
+      <geom mesh="Drill jig_collision_14" rgba="0.15828593356604892 0.15157437912737803 0.798958786952889 1" class="collision"/>
+      <geom mesh="Drill jig_collision_15" rgba="0.2001982655871931 0.37837898598686637 0.17848819258178594 1" class="collision"/>
+      <geom mesh="Drill jig_collision_16" rgba="0.8519513412528943 0.05488078474935487 0.7444653120202177 1" class="collision"/>
+      <geom mesh="Drill jig_collision_17" rgba="0.6209170226840706 0.2700318345656948 0.9748960940270294 1" class="collision"/>
+      <geom mesh="Drill jig_collision_18" rgba="0.478983502403576 0.6630852065667143 0.4591190866001431 1" class="collision"/>
+      <geom mesh="Drill jig_collision_19" rgba="0.5572236426714148 0.5561111130505001 0.34605222271931424 1" class="collision"/>
+      <geom mesh="Drill jig_collision_20" rgba="0.7426650438341558 0.48787864371351297 0.6808458743442459 1" class="collision"/>
+      <geom mesh="Drill jig_collision_21" rgba="0.8131861725817842 0.29906990881025597 0.001028849232059148 1" class="collision"/>
+      <geom mesh="Drill jig_collision_22" rgba="0.08297755850796051 0.31727455783624003 0.1653640080387726 1" class="collision"/>
+      <geom mesh="Drill jig_collision_23" rgba="0.8670949593424319 0.3972617771968592 0.8975032304052135 1" class="collision"/>
+      <geom mesh="Drill jig_collision_24" rgba="0.1579967273246573 0.4625621644971861 0.0442461526091692 1" class="collision"/>
+      <geom mesh="Drill jig_collision_25" rgba="0.33012364037891573 0.5494073412935343 0.49673975697912953 1" class="collision"/>
+      <geom mesh="Drill jig_collision_26" rgba="0.7754797182004127 0.12980834404769082 0.07869668377684469 1" class="collision"/>
+      <geom mesh="Drill jig_collision_27" rgba="0.6030960137911631 0.5682956466998142 0.008681746366357657 1" class="collision"/>
+      <geom mesh="Drill jig_collision_28" rgba="0.8704883741855052 0.8766060522589345 0.452644740865771 1" class="collision"/>
+      <geom mesh="Drill jig_collision_29" rgba="0.6465525622000304 0.8665485711933304 0.7437478126807873 1" class="collision"/>
+      <geom mesh="Drill jig_collision_30" rgba="0.5087692862151086 0.18638880063181018 0.18497854702302086 1" class="collision"/>
+      <geom mesh="Drill jig_collision_31" rgba="0.10394505244753427 0.46922183427235786 0.8900601144065433 1" class="collision"/>
+      <geom mesh="Drill jig_collision_32" rgba="0.3416124716248299 0.6033160488036724 0.8120999332280112 1" class="collision"/>
+      <geom mesh="Drill jig_collision_33" rgba="0.7743691519139493 0.17762501293811683 0.2059583520347288 1" class="collision"/>
+      <geom mesh="Drill jig_collision_34" rgba="0.2565221923589447 0.9166856240337442 0.32937281073479074 1" class="collision"/>
+      <geom mesh="Drill jig_collision_35" rgba="0.9367109366948069 0.803291991047022 0.5023824920914315 1" class="collision"/>
+      <geom mesh="Drill jig_collision_36" rgba="0.873823070266851 0.34729489639861255 0.5039312859002193 1" class="collision"/>
+      <geom mesh="Drill jig_collision_37" rgba="0.34840991154284096 0.5342460445835606 0.181572135559536 1" class="collision"/>
+      <geom mesh="Drill jig_collision_38" rgba="0.3451390151590671 0.2574867824177064 0.2642026737766432 1" class="collision"/>
+      <geom mesh="Drill jig_collision_39" rgba="0.09142798358848281 0.20340589062161907 0.8342340245659768 1" class="collision"/>
+      <geom mesh="Drill jig_collision_40" rgba="0.8633299707291819 0.1768330918956098 0.8066592029650795 1" class="collision"/>
+      <geom mesh="Drill jig_collision_41" rgba="0.07033581132827638 0.22725990112018424 0.3168312152587539 1" class="collision"/>
+      <geom mesh="Drill jig_collision_42" rgba="0.20040445373454552 0.8919397672527332 0.8685713564214911 1" class="collision"/>
+      <geom mesh="Drill jig_collision_43" rgba="0.0004491091371473521 0.21317191741578378 0.09538662089591166 1" class="collision"/>
+      <geom mesh="Drill jig_collision_44" rgba="0.24291343589843073 0.4507987248000588 0.3417389230021899 1" class="collision"/>
+      <geom mesh="Drill jig_collision_45" rgba="0.952795196579689 0.01579347910804063 0.5792302196231072 1" class="collision"/>
+      <geom mesh="Drill jig_collision_46" rgba="0.7052621215601376 0.7135195897321857 0.8919362408289586 1" class="collision"/>
+      <geom mesh="Drill jig_collision_47" rgba="0.8381726891704143 0.8130599255852639 0.21734008932634152 1" class="collision"/>
+      <geom mesh="Drill jig_collision_48" rgba="0.05866242129285881 0.43427588173315035 0.22441641716803007 1" class="collision"/>
+      <geom mesh="Drill jig_collision_49" rgba="0.8041293398401941 0.5834624046302685 0.346344384932317 1" class="collision"/>
+      <geom mesh="Drill jig_collision_50" rgba="0.6289517643485242 0.29131888895712477 0.36803626160249847 1" class="collision"/>
+      <geom mesh="Drill jig_collision_51" rgba="0.43248718564006505 0.6895620559436736 0.18084720543696076 1" class="collision"/>
+      <geom mesh="Drill jig_collision_52" rgba="0.6310328371112998 0.007557288057325251 0.24258180706052546 1" class="collision"/>
+      <geom mesh="Drill jig_collision_53" rgba="0.7534716599788477 0.748398826720905 0.7381354673068126 1" class="collision"/>
+      <geom mesh="Drill jig_collision_54" rgba="0.6770282171104324 0.9279789663285687 0.41341591497237407 1" class="collision"/>
+      <geom mesh="Drill jig_collision_55" rgba="0.14866609158020483 0.3361845027209188 0.049482558767172335 1" class="collision"/>
+      <geom mesh="Drill jig_collision_56" rgba="0.6294950200394981 0.9411352048022784 0.41064138420512397 1" class="collision"/>
+      <geom mesh="Drill jig_collision_57" rgba="0.18403279026197272 0.37811611118832933 0.6155128872168663 1" class="collision"/>
+      <geom mesh="Drill jig_collision_58" rgba="0.04827636048956063 0.37996287615195434 0.8335000595852212 1" class="collision"/>
+      <geom mesh="Drill jig_collision_59" rgba="0.4909032884412293 0.6700080300325344 0.01578881677113997 1" class="collision"/>
+      <geom mesh="Drill jig_collision_60" rgba="0.7653917920498239 0.805808422421035 0.4458375810779147 1" class="collision"/>
+      <geom mesh="Drill jig_collision_61" rgba="0.35651857152948363 0.7343450946456095 0.9972409353655043 1" class="collision"/>
+      <geom mesh="Drill jig_collision_62" rgba="0.9959627384740786 0.3019608885785001 0.6338828938359083 1" class="collision"/>
+      <geom mesh="Drill jig_collision_63" rgba="0.5779203474828484 0.566902804472624 0.421861598374375 1" class="collision"/>
+      <geom mesh="Drill jig_collision_64" rgba="0.025240825418453627 0.34198610396498563 0.012832480963919535 1" class="collision"/>
+      <geom mesh="Drill jig_collision_65" rgba="0.8660971358746478 0.9003800810977769 0.5536032669857611 1" class="collision"/>
+      <geom mesh="Drill jig_collision_66" rgba="0.169223502086983 0.8941008989090975 0.6561656654706794 1" class="collision"/>
+      <geom mesh="Drill jig_collision_67" rgba="0.614617076232593 0.6583233308293623 0.08103640772274079 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

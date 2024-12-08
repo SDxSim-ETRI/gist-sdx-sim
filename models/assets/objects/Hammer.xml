@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco model="Hammer">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Hammer" file="Hammer/Hammer.png"/>
+    <material name="material_0" texture="Hammer" specular="1.0" shininess="1.0"/>
+    <mesh file="Hammer/Hammer.obj" name="Hammer"/>
+    <mesh file="Hammer/Hammer_collision_0.obj" name="Hammer_collision_0"/>
+    <mesh file="Hammer/Hammer_collision_1.obj" name="Hammer_collision_1"/>
+    <mesh file="Hammer/Hammer_collision_2.obj" name="Hammer_collision_2"/>
+    <mesh file="Hammer/Hammer_collision_3.obj" name="Hammer_collision_3"/>
+    <mesh file="Hammer/Hammer_collision_4.obj" name="Hammer_collision_4"/>
+    <mesh file="Hammer/Hammer_collision_5.obj" name="Hammer_collision_5"/>
+    <mesh file="Hammer/Hammer_collision_6.obj" name="Hammer_collision_6"/>
+  </asset>
+  <worldbody>
+    <body name="Hammer">
+      <inertial mass="0.1" diaginertia="0.001 0.001 0.001" pos="0 0 0"/>
+      <geom material="material_0" mesh="Hammer" class="visual"/>
+      <geom mesh="Hammer_collision_0" rgba="0.9695077914321384 0.4977500394712008 0.7649015325914064 1" class="collision"/>
+      <geom mesh="Hammer_collision_1" rgba="0.511295611005278 0.6968834135394172 0.578289586108792 1" class="collision"/>
+      <geom mesh="Hammer_collision_2" rgba="0.21530565979009286 0.08883476544222102 0.4158531240754342 1" class="collision"/>
+      <geom mesh="Hammer_collision_3" rgba="0.6747530207924015 0.8661844995923271 0.008440894724891512 1" class="collision"/>
+      <geom mesh="Hammer_collision_4" rgba="0.9029412230092946 0.7705452922779853 0.46295910383016636 1" class="collision"/>
+      <geom mesh="Hammer_collision_5" rgba="0.4416893709279647 0.5583420646936583 0.3540399655876343 1" class="collision"/>
+      <geom mesh="Hammer_collision_6" rgba="0.26050146350102854 0.6617201258873628 0.7363520630550819 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>

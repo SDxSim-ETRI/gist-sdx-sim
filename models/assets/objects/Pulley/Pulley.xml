@@ -1,0 +1,66 @@
+<mujoco model="Pulley">
+  <default>
+    <default class="visual">
+      <geom group="2" type="mesh" contype="0" conaffinity="0"/>
+    </default>
+    <default class="collision">
+      <geom group="3" type="mesh"/>
+    </default>
+  </default>
+  <asset>
+    <texture type="2d" name="Pulley_BaseColor" file="Pulley_BaseColor.png"/>
+    <material name="material_0" texture="Pulley_BaseColor" specular="1.0" shininess="0.5"/>
+    <mesh file="Pulley.obj"/>
+    <mesh file="Pulley_collision_0.obj"/>
+    <mesh file="Pulley_collision_1.obj"/>
+    <mesh file="Pulley_collision_2.obj"/>
+    <mesh file="Pulley_collision_3.obj"/>
+    <mesh file="Pulley_collision_4.obj"/>
+    <mesh file="Pulley_collision_5.obj"/>
+    <mesh file="Pulley_collision_6.obj"/>
+    <mesh file="Pulley_collision_7.obj"/>
+    <mesh file="Pulley_collision_8.obj"/>
+    <mesh file="Pulley_collision_9.obj"/>
+    <mesh file="Pulley_collision_10.obj"/>
+    <mesh file="Pulley_collision_11.obj"/>
+    <mesh file="Pulley_collision_12.obj"/>
+    <mesh file="Pulley_collision_13.obj"/>
+    <mesh file="Pulley_collision_14.obj"/>
+    <mesh file="Pulley_collision_15.obj"/>
+    <mesh file="Pulley_collision_16.obj"/>
+    <mesh file="Pulley_collision_17.obj"/>
+    <mesh file="Pulley_collision_18.obj"/>
+    <mesh file="Pulley_collision_19.obj"/>
+    <mesh file="Pulley_collision_20.obj"/>
+    <mesh file="Pulley_collision_21.obj"/>
+    <mesh file="Pulley_collision_22.obj"/>
+  </asset>
+  <worldbody>
+    <body name="Pulley">
+      <geom material="material_0" mesh="Pulley" class="visual"/>
+      <geom mesh="Pulley_collision_0" rgba="0.9753029705575426 0.16634233009122867 0.4899156440574587 1" class="collision"/>
+      <geom mesh="Pulley_collision_1" rgba="0.3948825999468041 0.9480282864442117 0.36134291818073694 1" class="collision"/>
+      <geom mesh="Pulley_collision_2" rgba="0.16902573886960948 0.6394425864594492 0.6889535580863602 1" class="collision"/>
+      <geom mesh="Pulley_collision_3" rgba="0.24882374232456805 0.47766318270084684 0.07887313635458837 1" class="collision"/>
+      <geom mesh="Pulley_collision_4" rgba="0.6568228137124136 0.3301808291272724 0.9266199514590737 1" class="collision"/>
+      <geom mesh="Pulley_collision_5" rgba="0.1666626514060996 0.8995508205856033 0.7029539255214192 1" class="collision"/>
+      <geom mesh="Pulley_collision_6" rgba="0.6034921376406496 0.04600140815790288 0.09454643116053751 1" class="collision"/>
+      <geom mesh="Pulley_collision_7" rgba="0.934152735745016 0.6568296146339031 0.05389728027672491 1" class="collision"/>
+      <geom mesh="Pulley_collision_8" rgba="0.24484107409169686 0.8545104673730243 0.1615655753970937 1" class="collision"/>
+      <geom mesh="Pulley_collision_9" rgba="0.45969032812242816 0.6279489181527358 0.49013724601607744 1" class="collision"/>
+      <geom mesh="Pulley_collision_10" rgba="0.3833322215180929 0.23797232180459382 0.2702767004504625 1" class="collision"/>
+      <geom mesh="Pulley_collision_11" rgba="0.594986897039734 0.9770034927576092 0.11438602122412822 1" class="collision"/>
+      <geom mesh="Pulley_collision_12" rgba="0.4159191085195605 0.2853327879371823 0.4269324536968446 1" class="collision"/>
+      <geom mesh="Pulley_collision_13" rgba="0.2662379033420905 0.8304964035388808 0.9901810741905033 1" class="collision"/>
+      <geom mesh="Pulley_collision_14" rgba="0.05972671273661634 0.23339715076186351 0.6759278215244882 1" class="collision"/>
+      <geom mesh="Pulley_collision_15" rgba="0.29036171944745726 0.606033902363878 0.0548018772398714 1" class="collision"/>
+      <geom mesh="Pulley_collision_16" rgba="0.5169532925370849 0.5595608348632146 0.8636272839513816 1" class="collision"/>
+      <geom mesh="Pulley_collision_17" rgba="0.09327968977586132 0.9104775219968911 0.8645625316339163 1" class="collision"/>
+      <geom mesh="Pulley_collision_18" rgba="0.018648874903689272 0.9903014122885696 0.257045866024604 1" class="collision"/>
+      <geom mesh="Pulley_collision_19" rgba="0.5057385137315471 0.45339068616235767 0.894820387270809 1" class="collision"/>
+      <geom mesh="Pulley_collision_20" rgba="0.3450779071685983 0.5177656521689904 0.6669440365161373 1" class="collision"/>
+      <geom mesh="Pulley_collision_21" rgba="0.8362723134473006 0.8759199600193258 0.2870280077953361 1" class="collision"/>
+      <geom mesh="Pulley_collision_22" rgba="0.8896594389002981 0.6263992955905516 0.3836832151044136 1" class="collision"/>
+    </body>
+  </worldbody>
+</mujoco>
