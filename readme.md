@@ -8,7 +8,9 @@ conda env create -f environment.yml
 
 ## GPT api key
 You need to get your own API key from OpenAI.
+```bash
 And set it in utils/object_selection_prompt.py "openai.api_key"
+```
 
 ## Usage
 ```bash
