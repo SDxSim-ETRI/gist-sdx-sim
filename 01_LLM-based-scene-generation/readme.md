@@ -1,23 +1,25 @@
 # gist-sdx-sim
+## 01_LLM-based-scene-generation
 
-자연어 명령을 통해 MuJoCo 물리 시뮬레이션 환경에서 가구와 물체들을 자동으로 배치하는 프레임워크
+**2024년도 SDx 연구과제 진행 결과물**
 
-## Installation
+자연어 명령을 통해 LLM API와 MuJoCo 물리 시뮬레이션을 이용해 가상환경에서 가구와 물체들을 자동으로 배치하는 프레임워크
 
-conda env create -f environment.yml
+### Installation
 
-## GPT api key
-You need to get your own API key from OpenAI.
 ```bash
-And set it in utils/object_selection_prompt.py "openai.api_key"
+conda env create -f environment.yml
 ```
 
-## Usage
+- You need to get your own API key from OpenAI. And set it in utils/object_selection_prompt.py "openai.api_key"
+
+
+### Usage
 ```bash
 Example usage in main.py:
 user_instruction = "Place 2 tables and 3 chairs, with microwave and bookcase."
 ```
-## Generate layout
+### Generate layout
 ```bash
 selected_furniture, selected_objects = generate_object_selection(user_instruction, 
                                                               'config/furniture_list.json', 
@@ -27,7 +29,7 @@ furniture_poses = generate_furniture_poses(selected_furniture, parent_furniture,
 object_poses = generate_object_poses(selected_furniture, parent_furniture, selected_objects, 
                                    furniture_poses, funiture_list)
 ```
-## Save and load scene
+### Save and load scene
 ```bash
 save_poses_to_json(furniture_poses_save_path, object_poses_save_path, 
                   furniture_poses, object_poses)    
